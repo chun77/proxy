@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "erss_hwk2_hl490_zw297"
+			"value" : "my_proxy"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1118,6 +1118,42 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "MyProxyServer_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug"
+		},
+		{
+			"name" : "MyProxyServer_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "MyProxyServer_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src"
+		},
+		{
 			"name" : "erss_hwk2_hl490_zw297_BINARY_DIR",
 			"properties" : 
 			[
@@ -1143,6 +1179,42 @@
 		},
 		{
 			"name" : "erss_hwk2_hl490_zw297_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src"
+		},
+		{
+			"name" : "my_proxy_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug"
+		},
+		{
+			"name" : "my_proxy_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "my_proxy_SOURCE_DIR",
 			"properties" : 
 			[
 				{

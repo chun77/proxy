@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "erss_hwk2_hl490_zw297",
+					"name" : "my_proxy",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "erss_hwk2_hl490_zw297::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-erss_hwk2_hl490_zw297-Debug-9c587133b86cfae87ee0.json",
-					"name" : "erss_hwk2_hl490_zw297",
+					"id" : "my_proxy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_proxy-Debug-ccd5092f0750649f3d04.json",
+					"name" : "my_proxy",
 					"projectIndex" : 0
 				}
 			]

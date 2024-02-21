@@ -1,4 +1,10 @@
 # ninja log v5
+0	38	1708486973825641561	build.ninja	a5361fb1f881eec1
+0	293	1708486367641094326	CMakeFiles/my_proxy.dir/proxy.cpp.o	f139d6662b9300b9
 0	20	1708485512992229682	CMakeFiles/erss_hwk2_hl490_zw297.dir/proxy.cpp.o	fcb035d4d8df5cb3
 0	292	1708485513263218260	CMakeFiles/erss_hwk2_hl490_zw297.dir/main.cpp.o	45ac2c044b164f49
-294	324	1708485513296816274	erss_hwk2_hl490_zw297	7693935c3f8a1bc4
+0	569	1708486367918168903	CMakeFiles/my_proxy.dir/main.cpp.o	803652268ce03504
+569	721	1708486368069766966	my_proxy	510c32b72a5ffd1d
+4	32	1708486654623610367	/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	c173829fc63c4b81
+3	267	1708487970240802853	CMakeFiles/my_proxy.dir/main.cpp.o	803652268ce03504
+267	412	1708487970385322710	/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	c173829fc63c4b81

@@ -7,11 +7,18 @@
 # You can add other services your application may depend on here, such as a
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
+version: '2'
 services:
-  app:
-    build:
-      context: .
-      target: final
+  my_proxy:
+    build: ./src
+    image: my_proxy
+    container_name: my_proxy
+    command: bash -c "./run.sh"
+    volumes:
+      - ./src:/src
+      - ./logs:/var/log/erss
+    ports:
+      - "12345:12345"
     # If your application exposes a port, uncomment the following lines and change
     # the port numbers as needed. The first number is the host port and the second
     # is the port inside the container.

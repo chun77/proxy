@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "erss_hwk2_hl490_zw297"
+			"path" : "/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy"
 		}
 	],
 	"backtrace" : 1,
@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -68,7 +68,7 @@
 			]
 		}
 	],
-	"id" : "erss_hwk2_hl490_zw297::@6890427a1f51a3e7e1df",
+	"id" : "my_proxy::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -84,8 +84,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "erss_hwk2_hl490_zw297",
-	"nameOnDisk" : "erss_hwk2_hl490_zw297",
+	"name" : "my_proxy",
+	"nameOnDisk" : "my_proxy",
 	"paths" : 
 	{
 		"build" : ".",

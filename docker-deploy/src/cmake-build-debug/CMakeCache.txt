@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=erss_hwk2_hl490_zw297
+CMAKE_PROJECT_NAME:STATIC=my_proxy
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -214,6 +214,15 @@ CMAKE_TAPI:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeD
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+MyProxyServer_BINARY_DIR:STATIC=/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug
+
+//Value Computed by CMake
+MyProxyServer_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+MyProxyServer_SOURCE_DIR:STATIC=/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src
+
+//Value Computed by CMake
 erss_hwk2_hl490_zw297_BINARY_DIR:STATIC=/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug
 
 //Value Computed by CMake
@@ -221,6 +230,15 @@ erss_hwk2_hl490_zw297_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 erss_hwk2_hl490_zw297_SOURCE_DIR:STATIC=/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src
+
+//Value Computed by CMake
+my_proxy_BINARY_DIR:STATIC=/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug
+
+//Value Computed by CMake
+my_proxy_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+my_proxy_SOURCE_DIR:STATIC=/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src
 
 
 ########################
