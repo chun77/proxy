@@ -83,6 +83,7 @@ std::string get_request(int id, int client_fd) {
 }
 
 // handle the CONNECT method
+// Todo
 void handle_connect(int id, int client_fd, int server_fd) {
     // Send a 200 OK response to the client
     const char* response_to_client = "HTTP/1.1 200 Connection established\r\n\r\n";

@@ -27,6 +27,7 @@ private:
     int connection_id = 0;
     // client access port
     const char * port;
+    // current client request fd
     int socket_fd = -1;
 public:
     // constructor
