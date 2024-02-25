@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug/
+cmake_ninja_workdir = /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target my_proxy
 
@@ -49,17 +49,31 @@ cmake_ninja_workdir = /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/
 
 build cmake_object_order_depends_target_my_proxy: phony || CMakeFiles/my_proxy.dir
 
-build CMakeFiles/my_proxy.dir/main.cpp.o: CXX_COMPILER__my_proxy_unscanned_Debug /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/main.cpp || cmake_object_order_depends_target_my_proxy
+build CMakeFiles/my_proxy.dir/main.cpp.o: CXX_COMPILER__my_proxy_unscanned_Debug /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/main.cpp || cmake_object_order_depends_target_my_proxy
   DEP_FILE = CMakeFiles/my_proxy.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/.
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/my_proxy.dir
   OBJECT_FILE_DIR = CMakeFiles/my_proxy.dir
 
-build CMakeFiles/my_proxy.dir/proxy.cpp.o: CXX_COMPILER__my_proxy_unscanned_Debug /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/proxy.cpp || cmake_object_order_depends_target_my_proxy
+build CMakeFiles/my_proxy.dir/proxy.cpp.o: CXX_COMPILER__my_proxy_unscanned_Debug /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/proxy.cpp || cmake_object_order_depends_target_my_proxy
   DEP_FILE = CMakeFiles/my_proxy.dir/proxy.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/.
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/my_proxy.dir
+  OBJECT_FILE_DIR = CMakeFiles/my_proxy.dir
+
+build CMakeFiles/my_proxy.dir/client.cpp.o: CXX_COMPILER__my_proxy_unscanned_Debug /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/client.cpp || cmake_object_order_depends_target_my_proxy
+  DEP_FILE = CMakeFiles/my_proxy.dir/client.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/my_proxy.dir
+  OBJECT_FILE_DIR = CMakeFiles/my_proxy.dir
+
+build CMakeFiles/my_proxy.dir/server.cpp.o: CXX_COMPILER__my_proxy_unscanned_Debug /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/server.cpp || cmake_object_order_depends_target_my_proxy
+  DEP_FILE = CMakeFiles/my_proxy.dir/server.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/my_proxy.dir
   OBJECT_FILE_DIR = CMakeFiles/my_proxy.dir
 
@@ -69,14 +83,15 @@ build CMakeFiles/my_proxy.dir/proxy.cpp.o: CXX_COMPILER__my_proxy_unscanned_Debu
 
 
 #############################################
-# Link the executable /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy
+# Link the executable /Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy
 
-build /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy: CXX_EXECUTABLE_LINKER__my_proxy_Debug CMakeFiles/my_proxy.dir/main.cpp.o CMakeFiles/my_proxy.dir/proxy.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
+build /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy: CXX_EXECUTABLE_LINKER__my_proxy_Debug CMakeFiles/my_proxy.dir/main.cpp.o CMakeFiles/my_proxy.dir/proxy.cpp.o CMakeFiles/my_proxy.dir/client.cpp.o CMakeFiles/my_proxy.dir/server.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
+  LINK_PATH = -L/opt/homebrew/lib
   OBJECT_DIR = CMakeFiles/my_proxy.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy
+  TARGET_FILE = "/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy"
   TARGET_PDB = my_proxy.dbg
 
 
@@ -84,7 +99,7 @@ build /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy: CX
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd "/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -95,7 +110,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src -B/Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug
+  COMMAND = cd "/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src" -B"/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -105,7 +120,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build my_proxy: phony /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy
+build my_proxy: phony /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy
 
 # =============================================================================
 # Folder targets.
@@ -113,9 +128,9 @@ build my_proxy: phony /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/
 # =============================================================================
 
 #############################################
-# Folder: /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug
+# Folder: /Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug
 
-build all: phony /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy
+build all: phony /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy
 
 # =============================================================================
 # Built-in targets
@@ -124,14 +139,14 @@ build all: phony /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/m
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.84.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.84.0.cmake /opt/homebrew/lib/cmake/boost_atomic-1.84.0/boost_atomic-config-version.cmake /opt/homebrew/lib/cmake/boost_atomic-1.84.0/boost_atomic-config.cmake /opt/homebrew/lib/cmake/boost_atomic-1.84.0/libboost_atomic-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_atomic-1.84.0/libboost_atomic-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/boost_filesystem-config-version.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/boost_filesystem-config.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/libboost_filesystem-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/libboost_filesystem-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/libboost_filesystem-variant-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/libboost_filesystem-variant-static.cmake /opt/homebrew/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/boost_system-config-version.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/boost_system-config.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/libboost_system-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/libboost_system-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/libboost_system-variant-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/libboost_system-variant-static.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/evan/Documents/erss-hwk2-hl490-zw297/docker-deploy/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/evan/Desktop/ECE$ 568/erss-hwk2-hl490-zw297/docker-deploy/src/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.84.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.84.0.cmake /opt/homebrew/lib/cmake/boost_atomic-1.84.0/boost_atomic-config-version.cmake /opt/homebrew/lib/cmake/boost_atomic-1.84.0/boost_atomic-config.cmake /opt/homebrew/lib/cmake/boost_atomic-1.84.0/libboost_atomic-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_atomic-1.84.0/libboost_atomic-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/boost_filesystem-config-version.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/boost_filesystem-config.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/libboost_filesystem-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/libboost_filesystem-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/libboost_filesystem-variant-shared.cmake /opt/homebrew/lib/cmake/boost_filesystem-1.84.0/libboost_filesystem-variant-static.cmake /opt/homebrew/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/boost_system-config-version.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/boost_system-config.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/libboost_system-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/libboost_system-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/libboost_system-variant-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.84.0/libboost_system-variant-static.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################

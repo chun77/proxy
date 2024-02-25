@@ -1,15 +1,15 @@
-//
-//  main.cpp
-//  erss-hwk2-hl490-zw297
-//
-//  Created by Evan on 2/20/24.
-//
-
-#include <iostream>
+#include "proxy.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    char port[6]= "12345";
+    proxy p(port);
+    try {
+        p.construct();
+    } catch (std::runtime_error &e) {
+        std::cerr << e.what() << std::endl;
+        return 1;
+    }
+
+    p.accept();
     return 0;
-    // testasd
 }
