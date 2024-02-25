@@ -90,6 +90,7 @@ void proxy::construct() {
             inet_ntop(AF_INET6, &(addr_in6->sin6_addr), client_ip, INET6_ADDRSTRLEN);
         }
 
+        // create a new thread to handle the connection
         std::string ip_str(client_ip);
         std::thread t(handle_client_connection, ip_str, get_connection_id(), client_connection_fd);
         t.detach();

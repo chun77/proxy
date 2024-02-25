@@ -36,8 +36,8 @@ public:
             id = "no-id";
         }
         std::string message = id + ": " + msg;
-        std::cout<<message<<std::endl;
         std::unique_lock<std::shared_mutex> lock(mutex);
+        std::cout<<message<<std::endl;
         log_file<<message<<std::endl;
     }
 };

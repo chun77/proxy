@@ -25,10 +25,9 @@ class proxy {
     // port number
 private:
     int connection_id = 0;
+    // client access port
     const char * port;
     int socket_fd = -1;
-
-
 public:
     // constructor
     explicit proxy(const char *port);
@@ -36,12 +35,14 @@ public:
     // get a connection id
     int get_connection_id();
 
-    void construct(); // 创建socket，绑定端口，监听端口
-    // accept the proxy
-    [[noreturn]] void accept();// 循环接受连接，创建线程处理连接
+    // create a socket and bind it to the port, and listen to the port
+    void construct();
+
+    // accept a connection, and create a new thread to handle the connection
+    [[noreturn]] void accept();
+
     // destructor
     ~proxy();
-
 };
 
 

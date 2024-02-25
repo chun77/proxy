@@ -16,6 +16,7 @@ void handle_client_connection(const std::string& ip, int id, int client_fd) {
     std::string first_line, method, path, httpVersion;
     std::string hostname, port;
 
+    // parse the first line of the request
     std::regex requestLineRegex(R"(^(\w+)\s+(\S+)\s+(HTTP/\d\.\d))");
     std::smatch requestLineMatch;
     if (std::regex_search(request, requestLineMatch, requestLineRegex) && requestLineMatch.size() > 3) {
@@ -23,6 +24,7 @@ void handle_client_connection(const std::string& ip, int id, int client_fd) {
         method = requestLineMatch[1];
     }
 
+    // parse the host and port
     std::regex hostRegex(R"(Host:\s*(\S+):(\d+))");
     std::smatch hostMatch;
     if (std::regex_search(request, hostMatch, hostRegex) && hostMatch.size() > 2) {
@@ -30,6 +32,7 @@ void handle_client_connection(const std::string& ip, int id, int client_fd) {
         port = hostMatch[2];
     }
 
+    // current time
     auto time_now= std::time(nullptr);
     auto utc_time = *std::gmtime(&time_now);
     std::string time_str = std::asctime(&utc_time);
