@@ -21,7 +21,7 @@ void proxy::construct() {
     struct addrinfo host_info{};
     struct addrinfo * host_info_list;
     memset(&host_info, 0, sizeof(host_info));
-    host_info.ai_family = AF_UNSPEC;
+    host_info.ai_family = AF_INET;
     host_info.ai_socktype = SOCK_STREAM;
     host_info.ai_flags = AI_PASSIVE;
 
@@ -92,8 +92,25 @@ void proxy::construct() {
 
         // create a new thread to handle the connection
         std::string ip_str(client_ip);
-        std::thread t(handle_client_connection, ip_str, get_connection_id(), client_connection_fd);
-        t.detach();
+        // TODO: change to std::thread, and detach the thread
+        // single thread is for testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        handle_client_connection(ip_str, get_connection_id(), client_connection_fd);
+//        std::thread t(handle_client_connection, ip_str, get_connection_id(), client_connection_fd);
+//        t.detach();
     } //while
 }
 

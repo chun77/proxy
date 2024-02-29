@@ -42,10 +42,14 @@ public:
     }
 };
 
+// cache the response
 struct cache_item {
     std::string content;
-    std::time_t response_time = 0; // response_time + max_age or Expires
-    std::time_t expiration_time = 0;
+    std::string first_line;
+    std::string status; // status code
+
+    std::time_t response_time = 0;
+    std::time_t expiration_time = 0; // response_time + max_age or Expires
     std::string ETag;
     std::time_t last_modified = 0;
 
@@ -56,26 +60,38 @@ struct cache_item {
     bool is_no_cache = false;
     bool is_no_store = false;
     bool is_private = false;
-    bool is_chunked = false;
 
-    int id = -1;
+    bool need_validation = false;
 };
 
 class Cache {
 private:
     // mutex for the cache
     mutable std::shared_mutex mutex;
-    // key is the URL, value is the cache item
-    std::unordered_map<std::string, cache_item> cache;
+    // key is the first line of the http request (URL included), value is the cache item
+    std::unordered_map<std::string, cache_item> cache_list;
 public:
-    void add(const std::string &url, cache_item &response){
+    // update the cache
+    void update(const std::string &first_line, cache_item &response){
         std::unique_lock<std::shared_mutex> lock(mutex);
-        cache[url] = response;
+        cache_list[first_line] = response;
     }
 
-    bool is_cached(const std::string &url) const {
+    // add the response to the cache
+    void add(const std::string &first_line, cache_item &response){
+        std::unique_lock<std::shared_mutex> lock(mutex);
+        cache_list.insert({first_line, response});
+    }
+
+    // check if the request is in the cache, return the cache item
+    cache_item check(const std::string &first_line) const {
         std::shared_lock<std::shared_mutex> lock(mutex);
-        return cache.find(url) != cache.end();
+        auto it = cache_list.find(first_line);
+        if (it == cache_list.end()){
+            cache_item empty;
+            return empty;
+        }
+        return it->second;
     }
 };
 
