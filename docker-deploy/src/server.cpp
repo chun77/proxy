@@ -174,7 +174,8 @@ cache_item get_response(int id, int server_fd, request_item &request){
     }
 
     // Cache-Control fields
-    log_writer.write(id, "NOTE " + buffer_str.substr(buffer_str.find("Cache-Control"), buffer_str.find("\r\n", buffer_str.find("Cache-Control")) - buffer_str.find("Cache-Control")));
+    if(buffer_str.find("Cache-Control") != std::string::npos)
+        log_writer.write(id, "NOTE " + buffer_str.substr(buffer_str.find("Cache-Control"), buffer_str.find("\r\n", buffer_str.find("Cache-Control")) - buffer_str.find("Cache-Control")));
     // ETAG
     if (!response.ETag.empty()) {
         log_writer.write(id, "NOTE ETag: " + response.ETag);
@@ -191,7 +192,7 @@ cache_item get_response(int id, int server_fd, request_item &request){
 void revalidate(int id, int client_fd, int server_fd, request_item & request, cache_item &in_cache){
     // revalidation
     // send the re-validation request to the server
-    std::string revalidation_request = "GET " + request.first_line + " HTTP/1.1\r\n" + "Host: " + request.host + ":" + request.port + "\r\n";
+    std::string revalidation_request = request.first_line + "\r\n" + "Host: " + request.host + ":" + request.port + "\r\n";
     if(!in_cache.ETag.empty()){
         revalidation_request += "If-None-Match: " + in_cache.ETag + "\r\n";
     }
@@ -219,6 +220,7 @@ void revalidate(int id, int client_fd, int server_fd, request_item & request, ca
         in_cache.expiration_time = revalidation_response.expiration_time;
         in_cache.response_time = revalidation_response.response_time;
         cache.update(request.first_line, in_cache);
+        log_writer.write(id, "NOTE Re-validation succeeds, no need to update the cache");
         // send the response to the client
         if (send(client_fd, in_cache.content.c_str(), in_cache.content.size(), 0) < 0) {
             log_writer.write(id, "ERROR: Fail to send the response to the client");
@@ -230,6 +232,9 @@ void revalidate(int id, int client_fd, int server_fd, request_item & request, ca
         // if the response is cacheable
         if(check_cacheable(id, revalidation_response)){
             cache.update(request.first_line, revalidation_response);
+            log_writer.write(id, "NOTE: Re-validation succeeds, update the cache");
+        } else{
+            log_writer.write(id, "NOTE: Re-validation succeeds, not cacheable");
         }
         // send the response to the client
         if (send(client_fd, revalidation_response.content.c_str(), revalidation_response.content.size(), 0) < 0) {

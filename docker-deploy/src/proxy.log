@@ -1,9 +1,831 @@
-1: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 04:46:38 2024
+1: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:51 2024
 1: not in cache
-1: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
-1: Received "HTTP/1.1 200 OK" from server www.google.com:80
-1: NOTE Cache-Control: Cache-Control: private, max-age=0
-1: NOTE ETag: 
-1: NOTE Last-Modified: Thu Jan  1 00:00:00 1970
-1: not cacheable because private
-1: Responding "HTTP/1.1 200 OK" to client
+1: Requesting "GET http://127.0.0.1:8000/ HTTP/1.1" from server 127.0.0.1:8000
+1: Received "HTTP/1.0 200 OK" from server 127.0.0.1:8000
+1: NOTE Cache-Control: max-age=10
+1: cached, expires at Thu Feb 29 06:21:01 2024
+1: Responding "HTTP/1.0 200 OK" to client
+2: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:52 2024
+2: in cache, valid
+2: Responding the response to the client
+3: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:52 2024
+3: in cache, valid
+3: Responding the response to the client
+4: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:53 2024
+4: in cache, valid
+4: Responding the response to the client
+5: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:53 2024
+5: in cache, valid
+5: Responding the response to the client
+6: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:54 2024
+6: in cache, valid
+6: Responding the response to the client
+7: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:54 2024
+7: in cache, valid
+7: Responding the response to the client
+8: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:54 2024
+8: in cache, valid
+8: Responding the response to the client
+9: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:54 2024
+9: in cache, valid
+9: Responding the response to the client
+10: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:55 2024
+10: in cache, valid
+10: Responding the response to the client
+11: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:55 2024
+11: in cache, valid
+11: Responding the response to the client
+12: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:55 2024
+12: in cache, valid
+12: Responding the response to the client
+13: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:55 2024
+13: in cache, valid
+13: Responding the response to the client
+14: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:55 2024
+14: in cache, valid
+14: Responding the response to the client
+15: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:56 2024
+15: in cache, valid
+15: Responding the response to the client
+16: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:56 2024
+16: in cache, valid
+16: Responding the response to the client
+17: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:56 2024
+17: in cache, valid
+17: Responding the response to the client
+18: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:56 2024
+18: in cache, valid
+18: Responding the response to the client
+19: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:57 2024
+19: in cache, valid
+19: Responding the response to the client
+20: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:57 2024
+20: in cache, valid
+20: Responding the response to the client
+21: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:57 2024
+21: in cache, valid
+21: Responding the response to the client
+22: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:57 2024
+22: in cache, valid
+22: Responding the response to the client
+23: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:58 2024
+23: in cache, valid
+23: Responding the response to the client
+24: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:58 2024
+24: in cache, valid
+24: Responding the response to the client
+25: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:58 2024
+25: in cache, valid
+25: Responding the response to the client
+26: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:58 2024
+26: in cache, valid
+26: Responding the response to the client
+27: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:59 2024
+27: in cache, valid
+27: Responding the response to the client
+28: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:59 2024
+28: in cache, valid
+28: Responding the response to the client
+29: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:20:59 2024
+29: in cache, valid
+29: Responding the response to the client
+30: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:21:01 2024
+30: in cache, but expired at Thu Feb 29 06:21:01 2024
+30: Requesting "GET http://127.0.0.1:8000/ HTTP/1.1" from server 127.0.0.1:8000
+30: Received "HTTP/1.0 200 OK" from server 127.0.0.1:8000
+30: NOTE Cache-Control: max-age=10
+30: cached, expires at Thu Feb 29 06:21:11 2024
+30: NOTE: Re-validation succeeds, update the cache
+30: Responding the response to the client
+31: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:21:01 2024
+31: in cache, valid
+31: Responding the response to the client
+32: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:21:02 2024
+32: in cache, valid
+32: Responding the response to the client
+33: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:21:03 2024
+33: in cache, valid
+33: Responding the response to the client
+34: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:21:03 2024
+34: in cache, valid
+34: Responding the response to the client
+35: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:21:04 2024
+35: in cache, valid
+35: Responding the response to the client
+36: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:21:05 2024
+36: in cache, valid
+36: Responding the response to the client
+37: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:21:05 2024
+37: in cache, valid
+37: Responding the response to the client
+38: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+38: in cache, but expired at Thu Feb 29 06:21:11 2024
+38: Requesting "GET http://127.0.0.1:8000/ HTTP/1.1" from server 127.0.0.1:8000
+38: Received "HTTP/1.0 200 OK" from server 127.0.0.1:8000
+38: NOTE Cache-Control: max-age=10
+38: cached, expires at Thu Feb 29 06:23:32 2024
+38: NOTE: Re-validation succeeds, update the cache
+38: Responding the response to the client
+39: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+39: in cache, valid
+39: Responding the response to the client
+40: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+40: in cache, valid
+40: Responding the response to the client
+41: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+41: in cache, valid
+41: Responding the response to the client
+42: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+42: in cache, valid
+42: Responding the response to the client
+43: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+43: in cache, valid
+43: Responding the response to the client
+44: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+44: in cache, valid
+44: Responding the response to the client
+45: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+45: in cache, valid
+45: Responding the response to the client
+46: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+46: in cache, valid
+46: Responding the response to the client
+47: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+47: in cache, valid
+47: Responding the response to the client
+48: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+48: in cache, valid
+48: Responding the response to the client
+49: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+49: in cache, valid
+49: Responding the response to the client
+50: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+50: in cache, valid
+50: Responding the response to the client
+51: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+51: in cache, valid
+51: Responding the response to the client
+52: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+52: in cache, valid
+52: Responding the response to the client
+53: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+53: in cache, valid
+53: Responding the response to the client
+54: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+54: in cache, valid
+54: Responding the response to the client
+55: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+55: in cache, valid
+55: Responding the response to the client
+56: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+56: in cache, valid
+56: Responding the response to the client
+57: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+57: in cache, valid
+57: Responding the response to the client
+58: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+58: in cache, valid
+58: Responding the response to the client
+59: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+59: in cache, valid
+59: Responding the response to the client
+60: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+60: in cache, valid
+60: Responding the response to the client
+61: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+61: in cache, valid
+61: Responding the response to the client
+62: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+62: in cache, valid
+62: Responding the response to the client
+63: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+63: in cache, valid
+63: Responding the response to the client
+64: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+64: in cache, valid
+64: Responding the response to the client
+65: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+65: in cache, valid
+65: Responding the response to the client
+66: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+66: in cache, valid
+66: Responding the response to the client
+67: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+67: in cache, valid
+67: Responding the response to the client
+68: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+68: in cache, valid
+68: Responding the response to the client
+69: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+69: in cache, valid
+69: Responding the response to the client
+70: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+70: in cache, valid
+70: Responding the response to the client
+71: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+71: in cache, valid
+71: Responding the response to the client
+72: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+72: in cache, valid
+72: Responding the response to the client
+73: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+73: in cache, valid
+73: Responding the response to the client
+74: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+74: in cache, valid
+74: Responding the response to the client
+75: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+75: in cache, valid
+75: Responding the response to the client
+76: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+76: in cache, valid
+76: Responding the response to the client
+77: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+77: in cache, valid
+77: Responding the response to the client
+78: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+78: in cache, valid
+78: Responding the response to the client
+79: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+79: in cache, valid
+79: Responding the response to the client
+80: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+80: in cache, valid
+80: Responding the response to the client
+81: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+81: in cache, valid
+81: Responding the response to the client
+82: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+82: in cache, valid
+82: Responding the response to the client
+83: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+83: in cache, valid
+83: Responding the response to the client
+84: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+84: in cache, valid
+84: Responding the response to the client
+85: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+85: in cache, valid
+85: Responding the response to the client
+86: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+86: in cache, valid
+86: Responding the response to the client
+87: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+87: in cache, valid
+87: Responding the response to the client
+88: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+88: in cache, valid
+88: Responding the response to the client
+89: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+89: in cache, valid
+89: Responding the response to the client
+90: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+90: in cache, valid
+90: Responding the response to the client
+91: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+91: in cache, valid
+91: Responding the response to the client
+92: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+92: in cache, valid
+92: Responding the response to the client
+93: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+93: in cache, valid
+93: Responding the response to the client
+94: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+94: in cache, valid
+94: Responding the response to the client
+95: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+95: in cache, valid
+95: Responding the response to the client
+96: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+96: in cache, valid
+96: Responding the response to the client
+97: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+97: in cache, valid
+97: Responding the response to the client
+98: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+98: in cache, valid
+98: Responding the response to the client
+99: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+99: in cache, valid
+99: Responding the response to the client
+100: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+100: in cache, valid
+100: Responding the response to the client
+101: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+101: in cache, valid
+101: Responding the response to the client
+102: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+102: in cache, valid
+102: Responding the response to the client
+103: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+103: in cache, valid
+103: Responding the response to the client
+104: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+104: in cache, valid
+104: Responding the response to the client
+105: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+105: in cache, valid
+105: Responding the response to the client
+106: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+106: in cache, valid
+106: Responding the response to the client
+107: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+107: in cache, valid
+107: Responding the response to the client
+108: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+108: in cache, valid
+108: Responding the response to the client
+109: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+109: in cache, valid
+109: Responding the response to the client
+110: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+110: in cache, valid
+110: Responding the response to the client
+111: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+111: in cache, valid
+111: Responding the response to the client
+112: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+112: in cache, valid
+112: Responding the response to the client
+113: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+113: in cache, valid
+113: Responding the response to the client
+114: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+114: in cache, valid
+114: Responding the response to the client
+115: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+115: in cache, valid
+115: Responding the response to the client
+116: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+116: in cache, valid
+116: Responding the response to the client
+117: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+117: in cache, valid
+117: Responding the response to the client
+118: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+118: in cache, valid
+118: Responding the response to the client
+119: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+119: in cache, valid
+119: Responding the response to the client
+120: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+120: in cache, valid
+120: Responding the response to the client
+121: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+121: in cache, valid
+121: Responding the response to the client
+122: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+122: in cache, valid
+122: Responding the response to the client
+123: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+123: in cache, valid
+123: Responding the response to the client
+124: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+124: in cache, valid
+124: Responding the response to the client
+125: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+125: in cache, valid
+125: Responding the response to the client
+126: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+126: in cache, valid
+126: Responding the response to the client
+127: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+127: in cache, valid
+127: Responding the response to the client
+128: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+128: in cache, valid
+128: Responding the response to the client
+129: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+129: in cache, valid
+129: Responding the response to the client
+130: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+130: in cache, valid
+130: Responding the response to the client
+131: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+131: in cache, valid
+131: Responding the response to the client
+132: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+132: in cache, valid
+132: Responding the response to the client
+133: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+133: in cache, valid
+133: Responding the response to the client
+134: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+134: in cache, valid
+134: Responding the response to the client
+135: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+135: in cache, valid
+135: Responding the response to the client
+136: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+136: in cache, valid
+136: Responding the response to the client
+137: "GET http://127.0.0.1:8000/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:23:22 2024
+137: in cache, valid
+137: Responding the response to the client
+138: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:27 2024
+138: not in cache
+138: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+138: Received "HTTP/1.1 200 OK" from server www.google.com:80
+138: NOTE Cache-Control: private, max-age=0
+138: not cacheable because private
+138: Responding "HTTP/1.1 200 OK" to client
+139: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:27 2024
+139: not in cache
+139: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+139: Received "HTTP/1.1 200 OK" from server www.google.com:80
+139: NOTE Cache-Control: private, max-age=0
+139: not cacheable because private
+139: Responding "HTTP/1.1 200 OK" to client
+140: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:28 2024
+140: not in cache
+140: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+140: Received "HTTP/1.1 200 OK" from server www.google.com:80
+140: NOTE Cache-Control: private, max-age=0
+140: not cacheable because private
+140: Responding "HTTP/1.1 200 OK" to client
+141: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:28 2024
+141: not in cache
+141: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+141: Received "HTTP/1.1 200 OK" from server www.google.com:80
+141: NOTE Cache-Control: private, max-age=0
+141: not cacheable because private
+141: Responding "HTTP/1.1 200 OK" to client
+142: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:28 2024
+142: not in cache
+142: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+142: Received "HTTP/1.1 200 OK" from server www.google.com:80
+142: NOTE Cache-Control: private, max-age=0
+142: not cacheable because private
+142: Responding "HTTP/1.1 200 OK" to client
+143: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:28 2024
+143: not in cache
+143: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+143: Received "HTTP/1.1 200 OK" from server www.google.com:80
+143: NOTE Cache-Control: private, max-age=0
+143: not cacheable because private
+143: Responding "HTTP/1.1 200 OK" to client
+144: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:29 2024
+144: not in cache
+144: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+144: Received "HTTP/1.1 200 OK" from server www.google.com:80
+144: NOTE Cache-Control: private, max-age=0
+144: not cacheable because private
+144: Responding "HTTP/1.1 200 OK" to client
+145: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:29 2024
+145: not in cache
+145: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+145: Received "HTTP/1.1 200 OK" from server www.google.com:80
+145: NOTE Cache-Control: private, max-age=0
+145: not cacheable because private
+145: Responding "HTTP/1.1 200 OK" to client
+146: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:29 2024
+146: not in cache
+146: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+146: Received "HTTP/1.1 200 OK" from server www.google.com:80
+146: NOTE Cache-Control: private, max-age=0
+146: not cacheable because private
+146: Responding "HTTP/1.1 200 OK" to client
+147: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:29 2024
+147: not in cache
+147: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+147: Received "HTTP/1.1 200 OK" from server www.google.com:80
+147: NOTE Cache-Control: private, max-age=0
+147: not cacheable because private
+147: Responding "HTTP/1.1 200 OK" to client
+148: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:29 2024
+148: not in cache
+148: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+148: Received "HTTP/1.1 200 OK" from server www.google.com:80
+148: NOTE Cache-Control: private, max-age=0
+148: not cacheable because private
+148: Responding "HTTP/1.1 200 OK" to client
+149: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:30 2024
+149: not in cache
+149: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+149: Received "HTTP/1.1 200 OK" from server www.google.com:80
+149: NOTE Cache-Control: private, max-age=0
+149: not cacheable because private
+149: Responding "HTTP/1.1 200 OK" to client
+150: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:30 2024
+150: not in cache
+150: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+150: Received "HTTP/1.1 200 OK" from server www.google.com:80
+150: NOTE Cache-Control: private, max-age=0
+150: not cacheable because private
+150: Responding "HTTP/1.1 200 OK" to client
+151: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:30 2024
+151: not in cache
+151: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+151: Received "HTTP/1.1 200 OK" from server www.google.com:80
+151: NOTE Cache-Control: private, max-age=0
+151: not cacheable because private
+151: Responding "HTTP/1.1 200 OK" to client
+152: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:30 2024
+152: not in cache
+152: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+152: Received "HTTP/1.1 200 OK" from server www.google.com:80
+152: NOTE Cache-Control: private, max-age=0
+152: not cacheable because private
+152: Responding "HTTP/1.1 200 OK" to client
+153: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:30 2024
+153: not in cache
+153: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+153: Received "HTTP/1.1 200 OK" from server www.google.com:80
+153: NOTE Cache-Control: private, max-age=0
+153: not cacheable because private
+153: Responding "HTTP/1.1 200 OK" to client
+154: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:31 2024
+154: not in cache
+154: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+154: Received "HTTP/1.1 200 OK" from server www.google.com:80
+154: NOTE Cache-Control: private, max-age=0
+154: not cacheable because private
+154: Responding "HTTP/1.1 200 OK" to client
+155: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:31 2024
+155: not in cache
+155: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+155: Received "HTTP/1.1 200 OK" from server www.google.com:80
+155: NOTE Cache-Control: private, max-age=0
+155: not cacheable because private
+155: Responding "HTTP/1.1 200 OK" to client
+156: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:31 2024
+156: not in cache
+156: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+156: Received "HTTP/1.1 200 OK" from server www.google.com:80
+156: NOTE Cache-Control: private, max-age=0
+156: not cacheable because private
+156: Responding "HTTP/1.1 200 OK" to client
+157: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:31 2024
+157: not in cache
+157: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+157: Received "HTTP/1.1 200 OK" from server www.google.com:80
+157: NOTE Cache-Control: private, max-age=0
+157: not cacheable because private
+157: Responding "HTTP/1.1 200 OK" to client
+158: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:32 2024
+158: not in cache
+158: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+158: Received "HTTP/1.1 200 OK" from server www.google.com:80
+158: NOTE Cache-Control: private, max-age=0
+158: not cacheable because private
+158: Responding "HTTP/1.1 200 OK" to client
+159: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:32 2024
+159: not in cache
+159: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+159: Received "HTTP/1.1 200 OK" from server www.google.com:80
+159: NOTE Cache-Control: private, max-age=0
+159: not cacheable because private
+159: Responding "HTTP/1.1 200 OK" to client
+160: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:32 2024
+160: not in cache
+160: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+160: Received "HTTP/1.1 200 OK" from server www.google.com:80
+160: NOTE Cache-Control: private, max-age=0
+160: not cacheable because private
+160: Responding "HTTP/1.1 200 OK" to client
+161: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:32 2024
+161: not in cache
+161: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+161: Received "HTTP/1.1 200 OK" from server www.google.com:80
+161: NOTE Cache-Control: private, max-age=0
+161: not cacheable because private
+161: Responding "HTTP/1.1 200 OK" to client
+162: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:33 2024
+162: not in cache
+162: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+162: Received "HTTP/1.1 200 OK" from server www.google.com:80
+162: NOTE Cache-Control: private, max-age=0
+162: not cacheable because private
+162: Responding "HTTP/1.1 200 OK" to client
+163: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:33 2024
+163: not in cache
+163: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+163: Received "HTTP/1.1 200 OK" from server www.google.com:80
+163: NOTE Cache-Control: private, max-age=0
+163: not cacheable because private
+163: Responding "HTTP/1.1 200 OK" to client
+164: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:33 2024
+164: not in cache
+164: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+164: Received "HTTP/1.1 200 OK" from server www.google.com:80
+164: NOTE Cache-Control: private, max-age=0
+164: not cacheable because private
+164: Responding "HTTP/1.1 200 OK" to client
+165: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:33 2024
+165: not in cache
+165: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+165: Received "HTTP/1.1 200 OK" from server www.google.com:80
+165: NOTE Cache-Control: private, max-age=0
+165: not cacheable because private
+165: Responding "HTTP/1.1 200 OK" to client
+166: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:34 2024
+166: not in cache
+166: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+166: Received "HTTP/1.1 200 OK" from server www.google.com:80
+166: NOTE Cache-Control: private, max-age=0
+166: not cacheable because private
+166: Responding "HTTP/1.1 200 OK" to client
+167: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:34 2024
+167: not in cache
+167: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+167: Received "HTTP/1.1 200 OK" from server www.google.com:80
+167: NOTE Cache-Control: private, max-age=0
+167: not cacheable because private
+167: Responding "HTTP/1.1 200 OK" to client
+168: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:34 2024
+168: not in cache
+168: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+168: Received "HTTP/1.1 200 OK" from server www.google.com:80
+168: NOTE Cache-Control: private, max-age=0
+168: not cacheable because private
+168: Responding "HTTP/1.1 200 OK" to client
+169: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:34 2024
+169: not in cache
+169: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+169: Received "HTTP/1.1 200 OK" from server www.google.com:80
+169: NOTE Cache-Control: private, max-age=0
+169: not cacheable because private
+169: Responding "HTTP/1.1 200 OK" to client
+170: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:35 2024
+170: not in cache
+170: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+170: Received "HTTP/1.1 200 OK" from server www.google.com:80
+170: NOTE Cache-Control: private, max-age=0
+170: not cacheable because private
+170: Responding "HTTP/1.1 200 OK" to client
+171: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:35 2024
+171: not in cache
+171: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+171: Received "HTTP/1.1 200 OK" from server www.google.com:80
+171: NOTE Cache-Control: private, max-age=0
+171: not cacheable because private
+171: Responding "HTTP/1.1 200 OK" to client
+172: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:35 2024
+172: not in cache
+172: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+172: Received "HTTP/1.1 200 OK" from server www.google.com:80
+172: NOTE Cache-Control: private, max-age=0
+172: not cacheable because private
+172: Responding "HTTP/1.1 200 OK" to client
+173: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:35 2024
+173: not in cache
+173: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+173: Received "HTTP/1.1 200 OK" from server www.google.com:80
+173: NOTE Cache-Control: private, max-age=0
+173: not cacheable because private
+173: Responding "HTTP/1.1 200 OK" to client
+174: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:35 2024
+174: not in cache
+174: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+174: Received "HTTP/1.1 200 OK" from server www.google.com:80
+174: NOTE Cache-Control: private, max-age=0
+174: not cacheable because private
+174: Responding "HTTP/1.1 200 OK" to client
+175: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:36 2024
+175: not in cache
+175: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+175: Received "HTTP/1.1 200 OK" from server www.google.com:80
+175: NOTE Cache-Control: private, max-age=0
+175: not cacheable because private
+175: Responding "HTTP/1.1 200 OK" to client
+176: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:36 2024
+176: not in cache
+176: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+176: Received "HTTP/1.1 200 OK" from server www.google.com:80
+176: NOTE Cache-Control: private, max-age=0
+176: not cacheable because private
+176: Responding "HTTP/1.1 200 OK" to client
+177: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:36 2024
+177: not in cache
+177: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+177: Received "HTTP/1.1 200 OK" from server www.google.com:80
+177: NOTE Cache-Control: private, max-age=0
+177: not cacheable because private
+177: Responding "HTTP/1.1 200 OK" to client
+178: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:36 2024
+178: not in cache
+178: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+178: Received "HTTP/1.1 200 OK" from server www.google.com:80
+178: NOTE Cache-Control: private, max-age=0
+178: not cacheable because private
+178: Responding "HTTP/1.1 200 OK" to client
+179: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:36 2024
+179: not in cache
+179: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+179: Received "HTTP/1.1 200 OK" from server www.google.com:80
+179: NOTE Cache-Control: private, max-age=0
+179: not cacheable because private
+179: Responding "HTTP/1.1 200 OK" to client
+180: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:37 2024
+180: not in cache
+180: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+180: Received "HTTP/1.1 200 OK" from server www.google.com:80
+180: NOTE Cache-Control: private, max-age=0
+180: not cacheable because private
+180: Responding "HTTP/1.1 200 OK" to client
+181: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:37 2024
+181: not in cache
+181: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+181: Received "HTTP/1.1 200 OK" from server www.google.com:80
+181: NOTE Cache-Control: private, max-age=0
+181: not cacheable because private
+181: Responding "HTTP/1.1 200 OK" to client
+182: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:37 2024
+182: not in cache
+182: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+182: Received "HTTP/1.1 200 OK" from server www.google.com:80
+182: NOTE Cache-Control: private, max-age=0
+182: not cacheable because private
+182: Responding "HTTP/1.1 200 OK" to client
+183: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:37 2024
+183: not in cache
+183: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+183: Received "HTTP/1.1 200 OK" from server www.google.com:80
+183: NOTE Cache-Control: private, max-age=0
+183: not cacheable because private
+183: Responding "HTTP/1.1 200 OK" to client
+184: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:37 2024
+184: not in cache
+184: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+184: Received "HTTP/1.1 200 OK" from server www.google.com:80
+184: NOTE Cache-Control: private, max-age=0
+184: not cacheable because private
+184: Responding "HTTP/1.1 200 OK" to client
+185: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:38 2024
+185: not in cache
+185: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+185: Received "HTTP/1.1 200 OK" from server www.google.com:80
+185: NOTE Cache-Control: private, max-age=0
+185: not cacheable because private
+185: Responding "HTTP/1.1 200 OK" to client
+186: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:38 2024
+186: not in cache
+186: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+186: Received "HTTP/1.1 200 OK" from server www.google.com:80
+186: NOTE Cache-Control: private, max-age=0
+186: not cacheable because private
+186: Responding "HTTP/1.1 200 OK" to client
+187: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:38 2024
+187: not in cache
+187: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+187: Received "HTTP/1.1 200 OK" from server www.google.com:80
+187: NOTE Cache-Control: private, max-age=0
+187: not cacheable because private
+187: Responding "HTTP/1.1 200 OK" to client
+188: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:38 2024
+188: not in cache
+188: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+188: Received "HTTP/1.1 200 OK" from server www.google.com:80
+188: NOTE Cache-Control: private, max-age=0
+188: not cacheable because private
+188: Responding "HTTP/1.1 200 OK" to client
+189: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:38 2024
+189: not in cache
+189: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+189: Received "HTTP/1.1 200 OK" from server www.google.com:80
+189: NOTE Cache-Control: private, max-age=0
+189: not cacheable because private
+189: Responding "HTTP/1.1 200 OK" to client
+190: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:39 2024
+190: not in cache
+190: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+190: Received "HTTP/1.1 200 OK" from server www.google.com:80
+190: NOTE Cache-Control: private, max-age=0
+190: not cacheable because private
+190: Responding "HTTP/1.1 200 OK" to client
+191: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:39 2024
+191: not in cache
+191: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+191: Received "HTTP/1.1 200 OK" from server www.google.com:80
+191: NOTE Cache-Control: private, max-age=0
+191: not cacheable because private
+191: Responding "HTTP/1.1 200 OK" to client
+192: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:39 2024
+192: not in cache
+192: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+192: Received "HTTP/1.1 200 OK" from server www.google.com:80
+192: NOTE Cache-Control: private, max-age=0
+192: not cacheable because private
+192: Responding "HTTP/1.1 200 OK" to client
+193: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:39 2024
+193: not in cache
+193: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+193: Received "HTTP/1.1 200 OK" from server www.google.com:80
+193: NOTE Cache-Control: private, max-age=0
+193: not cacheable because private
+193: Responding "HTTP/1.1 200 OK" to client
+194: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:39 2024
+194: not in cache
+194: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+194: Received "HTTP/1.1 200 OK" from server www.google.com:80
+194: NOTE Cache-Control: private, max-age=0
+194: not cacheable because private
+194: Responding "HTTP/1.1 200 OK" to client
+195: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 06:24:40 2024
+195: not in cache
+195: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+195: Received "HTTP/1.1 200 OK" from server www.google.com:80
+195: NOTE Cache-Control: private, max-age=0
+195: not cacheable because private
+195: Responding "HTTP/1.1 200 OK" to client
