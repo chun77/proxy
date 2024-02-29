@@ -1,3 +1,0 @@
-/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug/CMakeFiles/my_proxy.dir
-/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir

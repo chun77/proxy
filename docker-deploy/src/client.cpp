@@ -5,14 +5,21 @@
 #include "server.h"
 
 
+void send_bad_request_response(int fd, int id) {
+    const char* response = "HTTP/1.1 400 Bad Request\r\n\r\n";
+    if (send(fd, response, strlen(response), 0) < 0) {
+        log_writer.write(id, "ERROR: Fail to send \"HTTP/1.1 400 Bad Request\" to the client");
+    } else{
+        log_writer.write(id, "Responding \"HTTP/1.1 400 Bad Request\" to the client");
+    }
+    close(fd);
+
+}
+
 
 // handle the client connections
 void handle_client_connection(const std::string& ip, int id, int client_fd) {
     request_item request = get_request(id, client_fd);
-    if (request.content.empty()) {
-        close(client_fd);
-        return;
-    }
 
     // get the current time
     auto time = std::time(nullptr);
@@ -37,24 +44,29 @@ void handle_client_connection(const std::string& ip, int id, int client_fd) {
     }
 
     if (request.method == "CONNECT") {
+        if (request.host.empty() || request.port.empty()) {
+            send_bad_request_response(client_fd, id);
+            return;
+        }
         handle_connect(id, client_fd, server_fd);
-    } else if (request.method == "POST") {
-        handle_post(id, client_fd, server_fd, request.content);
-    } else if (request.method == "GET") {
-        cache_item in_cache = cache.check(request.first_line);
-        handle_get(id, client_fd, server_fd, request, in_cache);
-    } else {
-        log_writer.write(id, "WARNING: http method not supported");
-        const char* response = "HTTP/1.1 400 Bad Request\r\n\r\n";
-        if (send(client_fd, response, strlen(response), 0) < 0) {
-            log_writer.write(id, "ERROR: Fail to send \"HTTP/1.1 400 Bad Request\" to the client");
-        } else{
-            log_writer.write(id, "Responding \"HTTP/1.1 400 Bad Request\" to the client");
+    } else{
+        if (request.method.empty() || request.first_line.empty() || request.host.empty() || request.port.empty() || request.content.empty()) {
+            send_bad_request_response(client_fd, id);
+        }else if (request.method == "POST") {
+            handle_post(id, client_fd, server_fd, request.content);
+        }else if (request.method == "GET") {
+            cache_item in_cache = cache.check(request.first_line);
+            handle_get(id, client_fd, server_fd, request, in_cache);
+        }else {
+            log_writer.write(id, "WARNING: http method not supported");
+            send_bad_request_response(client_fd, id);
         }
     }
+
     close(server_fd);
     close(client_fd);
 }
+
 
 // get the request from the client and parse it
 request_item get_request(int id, int client_fd) {
@@ -64,29 +76,39 @@ request_item get_request(int id, int client_fd) {
     request_item item;
 
     struct timeval tv{};
-    tv.tv_sec = 3;  // 3 seconds timeout
+    // increase the timeout for the client
+    tv.tv_sec = 10;  // 10 seconds timeout
     tv.tv_usec = 0;
     setsockopt(client_fd, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 
     // receive the request from the client
     ssize_t bytes_received;
-    while ((bytes_received = recv(client_fd, buffer, buffer_size, 0)) > 0) {
+    while ((bytes_received = recv(client_fd, buffer, sizeof(buffer) - 1, 0)) > 0) {
+        buffer[bytes_received] = '\0'; // Null-terminate the buffer to make it a valid C-string
         buffer_str.append(buffer, bytes_received);
         // if the request is complete
         if (buffer_str.find("\r\n\r\n") != std::string::npos) {
             break;
         }
     }
-    if (buffer_str.empty()) {
-        // Send a 400 error code to the client
-        log_writer.write(id, "ERROR: Received nothing from the client");
-        const char* response = "HTTP/1.1 400 Bad Request\r\n\r\n";
-        if (send(client_fd, response, strlen(response), 0) < 0) {
-            log_writer.write(id, "ERROR: Fail to send \"HTTP/1.1 400 Bad Request\" to the client");
-        } else{
-            log_writer.write(id, "Responding \"HTTP/1.1 400 Bad Request\" to the client");
-        }
-        return item;
+
+    if (bytes_received < 0) {
+        // An error occurred with recv
+        log_writer.write(id, "ERROR: recv failed with error code " + std::to_string(errno));
+        return item;  // Return an empty item to signify an error.
+    }
+
+    if (bytes_received == 0) {
+        // The client closed the connection, or timeout happened
+        log_writer.write(id, "INFO: No data received from the client, connection closed or timeout.");
+        return item;  // Return an empty item to signify a closed connection or timeout.
+    }
+
+    // At this point, we have received some data. Now we check if it's valid.
+    if (buffer_str.empty() || buffer_str.find("\r\n\r\n") == std::string::npos) {
+        // The request is incomplete or empty, but no recv error has occurred.
+        log_writer.write(id, "INFO: Incomplete request received from the client.");
+        return item;  // Return an empty item to signify an incomplete request.
     }
 
     item.content = buffer_str;
@@ -127,56 +149,91 @@ request_item get_request(int id, int client_fd) {
 // handle the CONNECT method
 // Todo
 void handle_connect(int id, int client_fd, int server_fd) {
-    // Send a 200 OK response to the client
-    const char* response_to_client = "HTTP/1.1 200 Connection established\r\n\r\n";
-    if (send(client_fd, response_to_client, strlen(response_to_client), 0) < 0) {
-        log_writer.write(id, "ERROR: Fail to send \"HTTP/1.1 200 Connection established\" to the client");
-        return;
+    // send the response to the client
+    const char* response = "HTTP/1.1 200 Connection Established\r\n\r\n";
+    if (send(client_fd, response, strlen(response), 0) < 0) {
+        log_writer.write(id, "ERROR: Fail to send \"HTTP/1.1 200 Connection Established\" to the client");
     } else{
-        log_writer.write(id, "Responding \"HTTP/1.1 200 Connection established\" to the client");
+        log_writer.write(id, "Responding \"HTTP/1.1 200 Connection Established\" to the client");
     }
 
-    // forward the data between the client and the server
-    fd_set read_fds;
-    int max_fd = std::max(client_fd, server_fd) + 1;
-    while (true) {
-        FD_ZERO(&read_fds);
-        FD_SET(client_fd, &read_fds);
-        FD_SET(server_fd, &read_fds);
-        if (select(max_fd, &read_fds, nullptr, nullptr, nullptr) == -1) {
+    // Forward the data between the client and the server
+    int max_fd = std::max(client_fd, server_fd) + 1; // the first argument of select() should be the highest-numbered file descriptor plus 1
+    fd_set read_fds; // Set of file descriptors to read from
+    char buffer[4096]; // Adjust size as needed
+    while (1) {
+        FD_ZERO(&read_fds);// Clear the set
+        FD_SET(client_fd, &read_fds); // Add the client_fd to the set
+        FD_SET(server_fd, &read_fds); // Add the server_fd to the set
+
+        // check if there is data to read on the client_fd or server_fd
+        // only leave the fds that have data to read
+        if (select(max_fd, &read_fds, NULL, NULL, NULL) < 0) {
             log_writer.write(id, "ERROR: select() failed");
             break;
         }
 
+        // Forward data from client to server
         if (FD_ISSET(client_fd, &read_fds)) {
-            char buf[BUFSIZ];
-            ssize_t bytes_received = recv(client_fd, buf, BUFSIZ, 0);
-            if (bytes_received <= 0) {
-                break;
-            }
-            ssize_t bytes_sent = send(server_fd, buf, bytes_received, 0);
-            if (bytes_sent < 0) {
+            int bytes_read = read(client_fd, buffer, sizeof(buffer));
+            if (bytes_read <= 0) break; // Connection closed or error
+            if (send(server_fd, buffer, bytes_read, 0) < 0) {
+                log_writer.write(id, "ERROR: Fail to forward data from client to server");
                 break;
             }
         }
 
+        // Forward data from server to client
         if (FD_ISSET(server_fd, &read_fds)) {
-            char buf[BUFSIZ];
-            ssize_t bytes_received = recv(server_fd, buf, BUFSIZ, 0);
-            if (bytes_received <= 0) {
-                break;
-            }
-            ssize_t bytes_sent = send(client_fd, buf, bytes_received, 0);
-            if (bytes_sent < 0) {
+            int bytes_read = read(server_fd, buffer, sizeof(buffer));
+            if (bytes_read <= 0) break; // Connection closed or error
+            if (send(client_fd, buffer, bytes_read, 0) < 0) {
+                log_writer.write(id, "ERROR: Fail to forward data from server to client");
                 break;
             }
         }
     }
+
+    // Close connections if loop exits
+    close(client_fd);
+    close(server_fd);
 }
+
+
 
 void handle_post(int id, int client_fd, int server_fd, const std::string& request){
+    // send the request to the server
+    const char* request_to_server = request.c_str();
+    if (send(server_fd, request_to_server, strlen(request_to_server), 0) < 0) {
+        log_writer.write(id, "WARNING: Fail to send the request to the server");
+        return;
+    } else{
+        log_writer.write(id, "Sending the request to the server");
+    }
 
+    // receive the response from the server
+    const int buffer_size = 4096;
+    char buffer[buffer_size];
+    std::string buffer_str;
+    ssize_t bytes_received;
+    while ((bytes_received = recv(server_fd, buffer, buffer_size, 0)) > 0) {
+        buffer_str.append(buffer, bytes_received);
+    }
+    if (bytes_received < 0) {
+        log_writer.write(id, "WARNING: Received nothing from the server");
+        return;
+    }
+
+    // send the response to the client
+    const char* response_to_client = buffer_str.c_str();
+    if (send(client_fd, response_to_client, strlen(response_to_client), 0) < 0) {
+        log_writer.write(id, "WARNING: Fail to send the response to the client");
+        return;
+    } else{
+        log_writer.write(id, "Sending the response to the client");
+    }
 }
+
 void handle_get(int id, int client_fd, int server_fd, request_item & request, cache_item &in_cache){
     // if the request is not in the cache
     if(in_cache.content.empty()){
@@ -208,7 +265,7 @@ void handle_get(int id, int client_fd, int server_fd, request_item & request, ca
             log_writer.write(id, "Responding \"" + response.first_line + "\" to client");
         }
     }
-    // need revalidation
+        // need revalidation
     else if (in_cache.need_validation || in_cache.expiration_time <= std::time(nullptr)){
         if (in_cache.need_validation){
             log_writer.write(id, "in cache, but requires re-validation");
@@ -217,7 +274,7 @@ void handle_get(int id, int client_fd, int server_fd, request_item & request, ca
             time_str.pop_back();
             log_writer.write(id, "in cache, but expired at " +  time_str);
         }
-       revalidate(id, client_fd, server_fd, request, in_cache);
+        revalidate(id, client_fd, server_fd, request, in_cache);
     }
     else {
         log_writer.write(id, "in cache, valid");
