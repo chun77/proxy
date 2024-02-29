@@ -1,0 +1,9 @@
+1: "GET http://www.google.com/ HTTP/1.1" from 127.0.0.1 @ Thu Feb 29 04:46:38 2024
+1: not in cache
+1: Requesting "GET http://www.google.com/ HTTP/1.1" from server www.google.com:80
+1: Received "HTTP/1.1 200 OK" from server www.google.com:80
+1: NOTE Cache-Control: Cache-Control: private, max-age=0
+1: NOTE ETag: 
+1: NOTE Last-Modified: Thu Jan  1 00:00:00 1970
+1: not cacheable because private
+1: Responding "HTTP/1.1 200 OK" to client

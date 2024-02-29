@@ -1,13 +1,81 @@
 # ninja log v5
 3	24	1708730234844144593	CMakeFiles/my_proxy.dir/cache_log.cpp.o	91e56ed9a5e3dc55
 10	677	1708835353349564338	CMakeFiles/my_proxy.dir/response.cpp.o	ed1fe0389db3be77
-985	1080	1708829518274643823	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	f588d4d056bc5c41
+658	694	1708838756944457289	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+6	597	1708838719118510740	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
 569	721	1708486368069766966	my_proxy	510c32b72a5ffd1d
 10	678	1708835353340563508	CMakeFiles/my_proxy.dir/main.cpp.o	552449d70e4cf4ce
-4	403	1708835625692477837	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
-0	45	1708837026465855444	build.ninja	18c579026acd5dc6
-6	597	1708838719118510740	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
 5	616	1708838719137158742	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
-5	861	1708838719382435245	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+0	45	1709137509134774134	build.ninja	18c579026acd5dc6
 1	657	1708838756905186760	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
-658	694	1708838756944457289	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+4	549	1709141368142656078	CMakeFiles/my_proxy.dir/main.cpp.o	552449d70e4cf4ce
+4	560	1709141368154420840	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+4	591	1709141368186441170	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+4	851	1709141368445259812	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+851	1917	1709141369513221954	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+1	560	1709144816107302229	CMakeFiles/my_proxy.dir/main.cpp.o	552449d70e4cf4ce
+2	570	1709144816118331350	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+2	609	1709144816157166483	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+2	860	1709144816407291671	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+2	334	1709144859011827051	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+3	463	1709145107543854246	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+3	464	1709145107548268636	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+3	718	1709145107802546422	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+718	752	1709145107838586046	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	498	1709147166784823518	CMakeFiles/my_proxy.dir/main.cpp.o	552449d70e4cf4ce
+3	522	1709147166808697316	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+3	553	1709147166839824891	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+3	826	1709147167111703245	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+826	920	1709147167208280774	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	370	1709147690599209448	CMakeFiles/my_proxy.dir/main.cpp.o	552449d70e4cf4ce
+3	408	1709147690638050955	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+2	441	1709147690671779653	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+3	724	1709147690953402071	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+724	758	1709147690989551693	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	373	1709147712987963598	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+373	403	1709147713018937120	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	493	1709147850180821447	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+2	538	1709147850225744225	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+2	791	1709147850477560123	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+791	824	1709147850512822909	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	405	1709148073199923178	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+2	675	1709148119278778885	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+675	708	1709148119313004544	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+3	549	1709161606620274939	CMakeFiles/my_proxy.dir/main.cpp.o	552449d70e4cf4ce
+3	596	1709161606667552778	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+3	858	1709161606929173894	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+3	872	1709161606941843416	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+2	574	1709163391484469455	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+3	820	1709163391729419295	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+3	833	1709163391743036078	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+2	374	1709163922512407994	CMakeFiles/my_proxy.dir/main.cpp.o	552449d70e4cf4ce
+3	440	1709163922577738226	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+3	707	1709163922844327104	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+3	714	1709163922852427899	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+714	749	1709163922888882499	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+3	732	1709178331509000558	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+3	976	1709178331753033978	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+3	995	1709178331773076720	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+995	1191	1709178331970786138	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	715	1709178582902932367	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+2	716	1709178582904884607	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+716	751	1709178582943913699	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	601	1709179023415107185	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+602	691	1709179023506268747	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	395	1709179287803892831	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+396	492	1709179287899288993	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+8	621	1709179491024840629	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+625	715	1709179491119421415	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	610	1709180088723738826	CMakeFiles/my_proxy.dir/proxy.cpp.o	4d75de6a8b7a7e80
+2	903	1709180089016449396	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+903	998	1709180089112919808	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+1	1059	1709180499665474931	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+2	1065	1709180499672804893	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+1065	1156	1709180499767529179	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	750	1709180692741725049	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+752	785	1709180692778949055	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	685	1709181224549713440	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+688	778	1709181224644310493	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
+2	611	1709181995297007739	CMakeFiles/my_proxy.dir/client.cpp.o	542938652c839712
+3	875	1709181995561277878	CMakeFiles/my_proxy.dir/server.cpp.o	bf66b5424058143d
+875	969	1709181995657336701	/Users/evan/Desktop/ECE 568/erss-hwk2-hl490-zw297/docker-deploy/src/my_proxy	4491e5f2ee232285
