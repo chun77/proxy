@@ -2,6 +2,37 @@
 #include "server.h"
 #include "proxy.h"
 
+//int connect_server(int id, const std::string &hostname, const std::string &port) {
+//    struct addrinfo host_info;
+//    struct addrinfo *host_info_list;
+//    int status;
+//    int socket_fd;
+//
+//    memset(&host_info, 0, sizeof(host_info));
+//    host_info.ai_family = AF_UNSPEC;
+//    host_info.ai_socktype = SOCK_STREAM;
+//
+//    status = getaddrinfo(hostname.c_str(), port.c_str(), &host_info, &host_info_list);
+//    if (status != 0) {
+//        log_writer.write(id, "ERROR: cannot get address info for host");
+//        return -1;
+//    }
+//
+//    socket_fd = socket(host_info_list->ai_family, host_info_list->ai_socktype, host_info_list->ai_protocol);
+//    if (socket_fd == -1) {
+//        log_writer.write(id, "ERROR: cannot create socket");
+//        return -1;
+//    }
+//
+//    status = connect(socket_fd, host_info_list->ai_addr, host_info_list->ai_addrlen);
+//    if (status == -1) {
+//        log_writer.write(id, "ERROR: cannot connect to socket, hostname: " + hostname + ", port: " + port);
+//        return -1;
+//    }
+//
+//    freeaddrinfo(host_info_list);
+//    return socket_fd;
+//}
 int connect_server(int id, const std::string &hostname, const std::string &port) {
     struct addrinfo host_info{};
     struct addrinfo *host_info_list;
@@ -14,19 +45,22 @@ int connect_server(int id, const std::string &hostname, const std::string &port)
 
     status = getaddrinfo(hostname.c_str(), port.c_str(), &host_info, &host_info_list);
     if (status != 0) {
-        log_writer.write(id, "ERROR: cannot get address info for server host");
+        log_writer.write(id, "ERROR: cannot get address info for server host: " + std::string(gai_strerror(status)));
         return -1;
     }
 
     socket_fd = socket(host_info_list->ai_family, host_info_list->ai_socktype, host_info_list->ai_protocol);
     if (socket_fd == -1) {
         log_writer.write(id, "ERROR: cannot create socket for server");
+        freeaddrinfo(host_info_list); // Ensure resources are freed on failure
         return -1;
     }
 
     status = connect(socket_fd, host_info_list->ai_addr, host_info_list->ai_addrlen);
     if (status == -1) {
-        log_writer.write(id, "ERROR: cannot connect to socket for server");
+        log_writer.write(id, "ERROR: cannot connect to socket for server, hostname: " + hostname + ", port: " + port + ", error: " + strerror(errno));
+        close(socket_fd); // Close the socket to avoid resource leak
+        freeaddrinfo(host_info_list); // Ensure resources are freed on failure
         return -1;
     }
 

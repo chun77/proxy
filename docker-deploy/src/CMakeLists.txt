@@ -17,3 +17,15 @@ add_executable(my_proxy
         server.cpp
         server.h
 )
+target_link_libraries(my_proxy
+        ${Boost_FILESYSTEM_LIBRARY}
+        ${Boost_SYSTEM_LIBRARY}
+)
+
+# tests
+add_executable(my_tests connect_test.cpp)
+target_link_libraries(my_tests
+        ${Boost_FILESYSTEM_LIBRARY}
+        ${Boost_SYSTEM_LIBRARY}
+)
+

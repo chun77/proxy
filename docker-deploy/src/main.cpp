@@ -1,7 +1,7 @@
 #include "proxy.h"
 
 int main(int argc, const char * argv[]) {
-    char port[6]= "12345";
+    char port[6]= "8080";
     proxy p(port);
     try {
         p.construct();

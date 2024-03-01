@@ -211,6 +211,8 @@ void handle_post(int id, int client_fd, int server_fd, const std::string& reques
         log_writer.write(id, "Sending the request to the server");
     }
 
+    std::cout<<"request to server: "<<request_to_server<<std::endl;
+
     // receive the response from the server
     const int buffer_size = 4096;
     char buffer[buffer_size];
@@ -223,6 +225,8 @@ void handle_post(int id, int client_fd, int server_fd, const std::string& reques
         log_writer.write(id, "WARNING: Received nothing from the server");
         return;
     }
+
+    std::cout<<"response from server: "<<buffer_str<<std::endl;
 
     // send the response to the client
     const char* response_to_client = buffer_str.c_str();
