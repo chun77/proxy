@@ -1,0 +1,12 @@
+1. prevent daemon from exit:
+add the following code to run.sh
+```
+while True:
+    time.sleep(60)
+```
+
+2. hostname in docker
+use the special DNS name host.docker.internal to refer to your host machine from within the container.
+
+3. CMakelists.txt
+add thread library
