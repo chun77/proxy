@@ -10,3 +10,14 @@ use the special DNS name host.docker.internal to refer to your host machine from
 
 3. CMakelists.txt
 add thread library
+
+4. some empty request causes error
+for example:
+127: "" from 192.168.65.1 @ Fri Mar  1 18:32:03 2024
+128: "" from 192.168.65.1 @ Fri Mar  1 18:32:03 2024
+127: ERROR: cannot get address info for server host: Name or service not known
+127: ERROR: Fail to create a new connection to the server
+127: ERROR: Fail to send "HTTP/1.1 502 Bad Gateway" to the client
+128: ERROR: cannot get address info for server host: Name or service not known
+128: ERROR: Fail to create a new connection to the server
+128: ERROR: Fail to send "HTTP/1.1 502 Bad Gateway" to the client
