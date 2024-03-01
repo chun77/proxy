@@ -29,6 +29,7 @@ COPY . /app
 RUN cmake . \
     && make
 
+
 ## When the container starts, run the compiled proxy server
 #CMD ["./my_proxy"]
 
@@ -39,5 +40,3 @@ EXPOSE 12345
 COPY run.sh /app/run.sh
 RUN chmod +x /app/run.sh
 ENTRYPOINT ["/app/run.sh"]
-
-
