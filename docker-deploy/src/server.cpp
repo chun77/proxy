@@ -1,6 +1,8 @@
 // deals with the response from the server
 #include "server.h"
 #include "proxy.h"
+#include <iomanip>
+
 
 int connect_server(int id, const std::string &hostname, const std::string &port) {
     struct addrinfo host_info{};
@@ -14,19 +16,22 @@ int connect_server(int id, const std::string &hostname, const std::string &port)
 
     status = getaddrinfo(hostname.c_str(), port.c_str(), &host_info, &host_info_list);
     if (status != 0) {
-        log_writer.write(id, "ERROR: cannot get address info for server host");
+        log_writer.write(id, "ERROR: cannot get address info for server host: " + std::string(gai_strerror(status)));
         return -1;
     }
 
     socket_fd = socket(host_info_list->ai_family, host_info_list->ai_socktype, host_info_list->ai_protocol);
     if (socket_fd == -1) {
         log_writer.write(id, "ERROR: cannot create socket for server");
+        freeaddrinfo(host_info_list); // Ensure resources are freed on failure
         return -1;
     }
 
     status = connect(socket_fd, host_info_list->ai_addr, host_info_list->ai_addrlen);
     if (status == -1) {
-        log_writer.write(id, "ERROR: cannot connect to socket for server");
+        log_writer.write(id, "ERROR: cannot connect to socket for server, hostname: " + hostname + ", port: " + port + ", error: " + strerror(errno));
+        close(socket_fd); // Close the socket to avoid resource leak
+        freeaddrinfo(host_info_list); // Ensure resources are freed on failure
         return -1;
     }
 
@@ -65,9 +70,6 @@ bool check_cacheable(int id, cache_item &response) {
     log_writer.write(id, "not cacheable because of control fields error");
     return false;
 }
-
-
-
 
 // get and parse the response from the server
 cache_item get_response(int id, int server_fd, request_item &request){

@@ -1,0 +1,220 @@
+1: "CONNECT p3epspumangb5dvijf52er7wdi.appsync-realtime-api.us-east-1.amazonaws.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:06 2024
+1: Responding "HTTP/1.1 200 Connection Established" to the client
+2: "CONNECT chatgpt-async-webps-prod-eastus-0.webpubsub.azure.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:07 2024
+3: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:07 2024
+4: "CONNECT p3epspumangb5dvijf52er7wdi.appsync-api.us-east-1.amazonaws.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:07 2024
+3: Responding "HTTP/1.1 200 Connection Established" to the client
+2: Responding "HTTP/1.1 200 Connection Established" to the client
+4: Responding "HTTP/1.1 200 Connection Established" to the client
+5: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:09 2024
+6: "CONNECT www.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:09 2024
+6: Responding "HTTP/1.1 200 Connection Established" to the client
+5: Responding "HTTP/1.1 200 Connection Established" to the client
+7: "CONNECT ff-proxy.leetcode.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:09 2024
+7: Responding "HTTP/1.1 200 Connection Established" to the client
+8: "CONNECT vfw.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
+9: "CONNECT dt.adsafeprotected.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
+11: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
+10: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
+10: Responding "HTTP/1.1 200 Connection Established" to the client
+11: Responding "HTTP/1.1 200 Connection Established" to the client
+12: "CONNECT pagead2.googlesyndication.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
+9: Responding "HTTP/1.1 200 Connection Established" to the client
+12: Responding "HTTP/1.1 200 Connection Established" to the client
+8: Responding "HTTP/1.1 200 Connection Established" to the client
+13: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
+14: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
+15: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
+15: Responding "HTTP/1.1 200 Connection Established" to the client
+13: Responding "HTTP/1.1 200 Connection Established" to the client
+14: Responding "HTTP/1.1 200 Connection Established" to the client
+16: "CONNECT www.googletagservices.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+16: Responding "HTTP/1.1 200 Connection Established" to the client
+17: "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+18: "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+17: Responding "HTTP/1.1 200 Connection Established" to the client
+18: Responding "HTTP/1.1 200 Connection Established" to the client
+19: "CONNECT completion.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+20: "CONNECT ad.doubleclick.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+20: Responding "HTTP/1.1 200 Connection Established" to the client
+19: Responding "HTTP/1.1 200 Connection Established" to the client
+21: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+22: "CONNECT pixel.adsafeprotected.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+21: Responding "HTTP/1.1 200 Connection Established" to the client
+22: Responding "HTTP/1.1 200 Connection Established" to the client
+23: "CONNECT tiny.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+25: "CONNECT metrics.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+24: "CONNECT ad.doubleclick.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+26: "CONNECT p3epspumangb5dvijf52er7wdi.appsync-realtime-api.us-east-1.amazonaws.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+27: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+28: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+24: Responding "HTTP/1.1 200 Connection Established" to the client
+29: "CONNECT d23tl967axkois.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+27: Responding "HTTP/1.1 200 Connection Established" to the client
+26: Responding "HTTP/1.1 200 Connection Established" to the client
+28: Responding "HTTP/1.1 200 Connection Established" to the client
+23: Responding "HTTP/1.1 200 Connection Established" to the client
+30: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+25: Responding "HTTP/1.1 200 Connection Established" to the client
+31: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+32: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+30: Responding "HTTP/1.1 200 Connection Established" to the client
+33: "CONNECT midway-auth.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+31: Responding "HTTP/1.1 200 Connection Established" to the client
+32: Responding "HTTP/1.1 200 Connection Established" to the client
+29: Responding "HTTP/1.1 200 Connection Established" to the client
+34: "CONNECT ad.doubleclick.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+35: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+36: "CONNECT pagead2.googlesyndication.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+37: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+38: "CONNECT player.stats.live-video.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+39: "CONNECT 4b64d6fa612f.us-east-1.playback.live-video.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+36: Responding "HTTP/1.1 200 Connection Established" to the client
+34: Responding "HTTP/1.1 200 Connection Established" to the client
+35: Responding "HTTP/1.1 200 Connection Established" to the client
+37: Responding "HTTP/1.1 200 Connection Established" to the client
+33: Responding "HTTP/1.1 200 Connection Established" to the client
+39: Responding "HTTP/1.1 200 Connection Established" to the client
+40: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:12 2024
+38: Responding "HTTP/1.1 200 Connection Established" to the client
+40: Responding "HTTP/1.1 200 Connection Established" to the client
+41: "CONNECT video-weaver.ord56.hls.live-video.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:12 2024
+41: Responding "HTTP/1.1 200 Connection Established" to the client
+42: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
+42: Responding "HTTP/1.1 200 Connection Established" to the client
+43: "CONNECT t.myvisualiq.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
+44: "CONNECT crb.kargo.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
+43: ERROR: cannot get address info for server host: Name or service not known
+43: ERROR: Fail to create a new connection to the server
+43: Responding "HTTP/1.1 502 Bad Gateway" to the client
+44: Responding "HTTP/1.1 200 Connection Established" to the client
+45: "CONNECT match.360yield.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
+45: Responding "HTTP/1.1 200 Connection Established" to the client
+46: "CONNECT usersync.samplicio.us:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
+46: Responding "HTTP/1.1 200 Connection Established" to the client
+47: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:15 2024
+47: Responding "HTTP/1.1 200 Connection Established" to the client
+48: "CONNECT clients4.google.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:21 2024
+48: Responding "HTTP/1.1 200 Connection Established" to the client
+49: "CONNECT ade.googlesyndication.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:22 2024
+49: Responding "HTTP/1.1 200 Connection Established" to the client
+50: "CONNECT us.edstem.org:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:34 2024
+50: Responding "HTTP/1.1 200 Connection Established" to the client
+51: "CONNECT optimizationguide-pa.googleapis.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:42 2024
+51: Responding "HTTP/1.1 200 Connection Established" to the client
+52: "CONNECT us.edstem.org:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+53: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+52: Responding "HTTP/1.1 200 Connection Established" to the client
+54: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+53: Responding "HTTP/1.1 200 Connection Established" to the client
+54: Responding "HTTP/1.1 200 Connection Established" to the client
+55: "CONNECT us.edstem.org:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+55: Responding "HTTP/1.1 200 Connection Established" to the client
+56: "CONNECT completion.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+56: Responding "HTTP/1.1 200 Connection Established" to the client
+57: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+57: Responding "HTTP/1.1 200 Connection Established" to the client
+58: "CONNECT t.myvisualiq.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+58: ERROR: cannot get address info for server host: Name or service not known
+58: ERROR: Fail to create a new connection to the server
+58: Responding "HTTP/1.1 502 Bad Gateway" to the client
+59: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+59: Responding "HTTP/1.1 200 Connection Established" to the client
+60: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:44 2024
+60: Responding "HTTP/1.1 200 Connection Established" to the client
+61: "CONNECT beacons.gcp.gvt2.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:12 2024
+61: Responding "HTTP/1.1 200 Connection Established" to the client
+62: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:12 2024
+62: Responding "HTTP/1.1 200 Connection Established" to the client
+63: "CONNECT d1cgrmilfgg1y.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:13 2024
+64: "CONNECT d1nruqhae353qc.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:13 2024
+63: Responding "HTTP/1.1 200 Connection Established" to the client
+64: Responding "HTTP/1.1 200 Connection Established" to the client
+65: "CONNECT d39x00gckxu2jb.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:13 2024
+65: Responding "HTTP/1.1 200 Connection Established" to the client
+66: "CONNECT api-amazondevices.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
+66: Responding "HTTP/1.1 200 Connection Established" to the client
+67: "CONNECT api-amazondevices.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
+67: Responding "HTTP/1.1 200 Connection Established" to the client
+68: "CONNECT content-autofill.googleapis.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
+69: "CONNECT d2h8zr0m6mus4x.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
+68: Responding "HTTP/1.1 200 Connection Established" to the client
+69: Responding "HTTP/1.1 200 Connection Established" to the client
+70: "CONNECT api-amazondevices.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
+70: Responding "HTTP/1.1 200 Connection Established" to the client
+71: "CONNECT api-amazondevices.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
+72: "CONNECT completion.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
+71: Responding "HTTP/1.1 200 Connection Established" to the client
+72: Responding "HTTP/1.1 200 Connection Established" to the client
+73: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+73: Responding "HTTP/1.1 200 Connection Established" to the client
+74: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+74: Responding "HTTP/1.1 200 Connection Established" to the client
+75: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+76: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+77: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+79: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+78: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+80: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+80: Responding "HTTP/1.1 200 Connection Established" to the client
+76: Responding "HTTP/1.1 200 Connection Established" to the client
+77: Responding "HTTP/1.1 200 Connection Established" to the client
+79: Responding "HTTP/1.1 200 Connection Established" to the client
+78: Responding "HTTP/1.1 200 Connection Established" to the client
+75: Responding "HTTP/1.1 200 Connection Established" to the client
+81: "CONNECT www.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+82: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+83: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+84: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+83: Responding "HTTP/1.1 200 Connection Established" to the client
+82: Responding "HTTP/1.1 200 Connection Established" to the client
+84: Responding "HTTP/1.1 200 Connection Established" to the client
+81: Responding "HTTP/1.1 200 Connection Established" to the client
+85: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
+86: "CONNECT cloudfront-labs.amazonaws.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
+85: Responding "HTTP/1.1 200 Connection Established" to the client
+87: "CONNECT t.myvisualiq.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
+88: "CONNECT crb.kargo.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
+87: ERROR: cannot get address info for server host: Name or service not known
+87: ERROR: Fail to create a new connection to the server
+87: ERROR: Fail to send "HTTP/1.1 502 Bad Gateway" to the client
+88: Responding "HTTP/1.1 200 Connection Established" to the client
+89: "CONNECT match.360yield.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
+89: Responding "HTTP/1.1 200 Connection Established" to the client
+90: "CONNECT usersync.samplicio.us:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
+90: Responding "HTTP/1.1 200 Connection Established" to the client
+91: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:19 2024
+92: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:19 2024
+93: "CONNECT ara.paa-reporting-advertising.amazon:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:19 2024
+91: Responding "HTTP/1.1 200 Connection Established" to the client
+92: Responding "HTTP/1.1 200 Connection Established" to the client
+93: Responding "HTTP/1.1 200 Connection Established" to the client
+94: "CONNECT ff-proxy.leetcode.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:19 2024
+94: Responding "HTTP/1.1 200 Connection Established" to the client
+95: "CONNECT clients4.google.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:23 2024
+95: Responding "HTTP/1.1 200 Connection Established" to the client
+96: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:36 2024
+96: Responding "HTTP/1.1 200 Connection Established" to the client
+97: "CONNECT gitlab.oit.duke.edu:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:53 2024
+97: Responding "HTTP/1.1 200 Connection Established" to the client
+98: "CONNECT neat-iodine-05e.notion.site:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:59 2024
+98: Responding "HTTP/1.1 200 Connection Established" to the client
+99: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:08 2024
+99: Responding "HTTP/1.1 200 Connection Established" to the client
+100: "CONNECT beacons.gcp.gvt2.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:19 2024
+100: Responding "HTTP/1.1 200 Connection Established" to the client
+101: "CONNECT ff-proxy.leetcode.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:29 2024
+101: Responding "HTTP/1.1 200 Connection Established" to the client
+102: "CONNECT neat-iodine-05e.notion.site:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:32 2024
+102: Responding "HTTP/1.1 200 Connection Established" to the client
+86: ERROR: cannot connect to socket for server, hostname: cloudfront-labs.amazonaws.com, port: 443, error: Connection refused
+86: ERROR: Fail to create a new connection to the server
+86: ERROR: Fail to send "HTTP/1.1 502 Bad Gateway" to the client
+103: "CONNECT ssl.gstatic.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:37 2024
+103: Responding "HTTP/1.1 200 Connection Established" to the client
+104: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:38 2024
+104: Responding "HTTP/1.1 200 Connection Established" to the client
+105: "CONNECT ab.chatgpt.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:20:03 2024
+105: Responding "HTTP/1.1 200 Connection Established" to the client
+106: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:20:11 2024
+106: Responding "HTTP/1.1 200 Connection Established" to the client

@@ -29,6 +29,11 @@ void handle_client_connection(const std::string& ip, int id, int client_fd) {
     log_writer.write(id, '"' + request.first_line + '"' + " from " + ip + " @ " + time_str);
 
     // create a new connection to the server
+    // if the request destination is the server on the host machine, use "host.docker.internal" as the hostname
+    if (request.host == "localhost") {
+        request.host = "host.docker.internal"; // "host.docker.internal" is the hostname that refers to the host machine
+    }
+
     int server_fd = connect_server(id, request.host, request.port);
     if (server_fd == -1) {
         log_writer.write(id, "ERROR: Fail to create a new connection to the server");
@@ -211,6 +216,8 @@ void handle_post(int id, int client_fd, int server_fd, const std::string& reques
         log_writer.write(id, "Sending the request to the server");
     }
 
+    std::cout<<"request to server: "<<request_to_server<<std::endl;
+
     // receive the response from the server
     const int buffer_size = 4096;
     char buffer[buffer_size];
@@ -223,6 +230,8 @@ void handle_post(int id, int client_fd, int server_fd, const std::string& reques
         log_writer.write(id, "WARNING: Received nothing from the server");
         return;
     }
+
+    std::cout<<"response from server: "<<buffer_str<<std::endl;
 
     // send the response to the client
     const char* response_to_client = buffer_str.c_str();
@@ -265,7 +274,8 @@ void handle_get(int id, int client_fd, int server_fd, request_item & request, ca
             log_writer.write(id, "Responding \"" + response.first_line + "\" to client");
         }
     }
-        // need revalidation
+
+    // need revalidation
     else if (in_cache.need_validation || in_cache.expiration_time <= std::time(nullptr)){
         if (in_cache.need_validation){
             log_writer.write(id, "in cache, but requires re-validation");
