@@ -1,6 +1,9 @@
 // deals with the response from the server
 #include "server.h"
 #include "proxy.h"
+#include <iomanip>
+
+
 
 //int connect_server(int id, const std::string &hostname, const std::string &port) {
 //    struct addrinfo host_info;

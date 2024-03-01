@@ -3,10 +3,18 @@ project(my_proxy)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
+# boost
 find_package(Boost REQUIRED COMPONENTS filesystem system)
 include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
+
+#thread
+# Add thread support
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+
 add_executable(my_proxy
         main.cpp
         proxy.cpp
@@ -18,14 +26,8 @@ add_executable(my_proxy
         server.h
 )
 target_link_libraries(my_proxy
-        ${Boost_FILESYSTEM_LIBRARY}
-        ${Boost_SYSTEM_LIBRARY}
-)
-
-# tests
-add_executable(my_tests connect_test.cpp)
-target_link_libraries(my_tests
-        ${Boost_FILESYSTEM_LIBRARY}
-        ${Boost_SYSTEM_LIBRARY}
+        Boost::filesystem
+        Boost::system
+        Threads::Threads # Add thread support
 )
 

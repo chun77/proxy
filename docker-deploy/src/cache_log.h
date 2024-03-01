@@ -22,8 +22,7 @@ private:
 public:
     //initialize the log file
     Log(){
-//        log_file.open("/var/log/erss/proxy.log");
-        log_file.open("proxy.log");
+        log_file.open("/var/log/erss/proxy.log");
         if (!log_file.is_open()){
             throw std::runtime_error("cannot open log file");
         }

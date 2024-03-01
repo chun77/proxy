@@ -10,5 +10,3 @@ services:
       - ./logs:/var/log/erss
     ports:
       - "12345:12345"
-
-volumes:
