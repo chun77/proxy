@@ -1,8 +1,39 @@
 // deals with the response from the server
 #include "server.h"
 #include "proxy.h"
-#include <iomanip>
 
+
+bool check_cacheable(int id, cache_item &response) {
+    if (response.status != "200") {
+        log_writer.write(id, "not cacheable because status code is not 200");
+        return false;
+    }
+    if (response.is_no_store) {
+        log_writer.write(id, "not cacheable because no-store");
+        return false;
+    }
+    if (response.is_private) {
+        log_writer.write(id, "not cacheable because private");
+        return false;
+    }
+
+    auto current_time = std::time(nullptr);
+    if (response.is_no_cache || response.expiration_time <= current_time) {
+        log_writer.write(id, "cached, but requires re-validation");
+        response.need_validation = true;
+        return true;
+    }
+
+    if (response.expiration_time > current_time) {
+        std::string time_str = std::asctime(std::gmtime(&response.expiration_time));
+        time_str.pop_back();
+        log_writer.write(id, "cached, expires at " +  time_str);
+        return true;
+    }
+
+    log_writer.write(id, "not cacheable because of control fields error");
+    return false;
+}
 
 int connect_server(int id, const std::string &hostname, const std::string &port) {
     struct addrinfo host_info{};
@@ -39,183 +70,137 @@ int connect_server(int id, const std::string &hostname, const std::string &port)
     return socket_fd;
 }
 
-bool check_cacheable(int id, cache_item &response) {
-    if (response.status != "200") {
-        log_writer.write(id, "not cacheable because status code is not 200");
-        return false;
-    }
-    if (response.is_no_store) {
-        log_writer.write(id, "not cacheable because no-store");
-        return false;
-    }
-    if (response.is_private) {
-        log_writer.write(id, "not cacheable because private");
-        return false;
-    }
-
-    auto current_time = std::time(nullptr);
-    if (response.is_no_cache || response.expiration_time <= current_time) {
-        log_writer.write(id, "cached, but requires re-validation");
-        response.need_validation = true;
-        return true;
-    }
-
-    if (response.expiration_time > current_time) {
-        std::string time_str = std::asctime(std::gmtime(&response.expiration_time));
-        time_str.pop_back();
-        log_writer.write(id, "cached, expires at " +  time_str);
-        return true;
-    }
-
-    log_writer.write(id, "not cacheable because of control fields error");
-    return false;
-}
 
 // get and parse the response from the server
-cache_item get_response(int id, int server_fd, request_item &request){
-    cache_item response;
+cache_item parse_response(int id, boost::beast::http::response<boost::beast::http::string_body> & response, request_item &request){
+    cache_item parsed_response;
 
-    // receive the response from the server
-    const int buffer_size = 4096;
-    char buffer[buffer_size];
-    std::string buffer_str;
-
-    struct timeval tv{};
-    tv.tv_sec = 3;  // 3 seconds timeout
-    tv.tv_usec = 0;
-    setsockopt(server_fd, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
-
-    // receive the request from the server
-    ssize_t bytes_received;
-    while ((bytes_received = recv(server_fd, buffer, buffer_size, 0)) > 0) {
-        buffer_str.append(buffer, bytes_received);
-        // if the response is complete
-        if (buffer_str.find("\r\n\r\n") != std::string::npos) {
-            break;
-        }
-    }
-    if (buffer_str.empty()) {
-        log_writer.write(id, "ERROR: Received nothing from the server " + request.host + ":" + request.port);
-        // send error message to the client
-        const char* response_to_client = "HTTP/1.1 502 Bad Gateway\r\n\r\n";
-        if (send(id, response_to_client, strlen(response_to_client), 0) < 0) {
-            log_writer.write(id, "ERROR: Fail to send \"HTTP/1.1 502 Bad Gateway\" to the client");
-        } else{
-            log_writer.write(id, "Responding \"HTTP/1.1 502 Bad Gateway\" to the client");
-        }
-        return response;
-    }
-    // parse the response
-
+    // parse the parsed_response
     //content
-    response.content = buffer_str;
+    std::ostringstream oss;
+    oss << response;
+    parsed_response.content = oss.str();
+
     //first line
-    response.first_line = buffer_str.substr(0, buffer_str.find("\r\n"));
-    log_writer.write(id, "Received \"" + response.first_line + "\" from server " + request.host + ":" + request.port);
+    parsed_response.first_line = "HTTP/" + std::to_string(response.version() / 10) + "." + std::to_string(response.version() % 10) +
+                                  " " + std::to_string(response.result_int()) +
+                                  " " + std::string(response.reason());
+
+    log_writer.write(id, "Received \"" + parsed_response.first_line + "\" from server " + request.host + ":" + request.port);
     //status
-    response.status = response.first_line.substr(response.first_line.find(' ') + 1, 3);
-    if(response.status == "304") {
-        return response;
-    }
+    parsed_response.status = std::to_string(response.result_int());
     //response time
-    response.response_time = std::time(nullptr);
+    parsed_response.response_time = std::time(nullptr);
 
     // Expires
-    std::regex expires_regex("Expires: (.*)");
-    std::smatch expires_match;
-    if (std::regex_search(buffer_str, expires_match, expires_regex) && expires_match.size() > 1) {
-        std::tm tm = {};
-        std::istringstream ss(expires_match[1]);
-        ss >> std::get_time(&tm, "%a, %d %b %Y %H:%M:%S %Z");
-        response.expiration_time = std::mktime(&tm);
-    }
-
-    // max-age
-    std::regex max_age_regex("max-age=([0-9]+)");
-    std::smatch max_age_match;
-    if (std::regex_search(buffer_str, max_age_match, max_age_regex) && max_age_match.size() > 1) {
-        response.max_age = std::stoi(max_age_match[1]);
-        response.expiration_time = response.response_time + response.max_age;
+    auto it = response.find(boost::beast::http::field::expires);
+    if (it != response.end()) {
+        std::string expires_str = std::string(it->value());
+        if(expires_str != "-1" && expires_str != "0"){
+            std::tm tm = {};
+            std::istringstream ss(expires_str);
+            ss >> std::get_time(&tm, "%a, %d %b %Y %H:%M:%S GMT");
+            parsed_response.expiration_time = std::mktime(&tm);
+        }
     }
 
     // ETag
-    std::regex ETag_regex("ETag: (.*)");
-    std::smatch ETag_match;
-    if (std::regex_search(buffer_str, ETag_match, ETag_regex) && ETag_match.size() > 1) {
-        response.ETag = ETag_match[1];
-    }
+    parsed_response.ETag = response[boost::beast::http::field::etag];
+
     //last modified
-    std::regex last_modified_regex("Last-Modified: (.*)");
-    std::smatch last_modified_match;
-    if (std::regex_search(buffer_str, last_modified_match, last_modified_regex) && last_modified_match.size() > 1) {
-        std::tm tm = {};
-        std::istringstream ss(last_modified_match[1]);
-        ss >> std::get_time(&tm, "%a, %d %b %Y %H:%M:%S %Z");
-        response.last_modified = std::mktime(&tm);
-    }
+    parsed_response.last_modified = response[boost::beast::http::field::last_modified];
+
     // Cache-Control fields
-    // must-revalidate
-    if (buffer_str.find("must-revalidate") != std::string::npos) {
-        response.is_must_revalidate = true;
+    auto cache_control = response[boost::beast::http::field::cache_control];
+
+    // max-age
+    auto pos = cache_control.find("max-age=");
+    if (pos != std::string::npos) {
+        auto start = pos + std::strlen("max-age=");
+        auto end = cache_control.find(',', start);
+        if (end == std::string::npos) {
+            end = cache_control.length();
+        }
+        auto value = cache_control.substr(start, end - start);
+        parsed_response.max_age = std::stoi(value);
+        parsed_response.expiration_time = parsed_response.response_time + parsed_response.max_age;
     }
+
+    // must-revalidate
+    if (cache_control.find("must-revalidate") != std::string::npos) {
+        parsed_response.is_must_revalidate = true;
+    }
+
     // public
-    if (buffer_str.find("public") != std::string::npos) {
-        response.is_public = true;
+    if (cache_control.find("public") != std::string::npos) {
+        parsed_response.is_public = true;
     }
     // no-cache
-    if (buffer_str.find("no-cache") != std::string::npos) {
-        response.is_no_cache = true;
+    if (cache_control.find("no-cache") != std::string::npos) {
+        parsed_response.is_no_cache = true;
     }
     // no-store
-    if (buffer_str.find("no-store") != std::string::npos) {
-        response.is_no_store = true;
+    if (cache_control.find("no-store") != std::string::npos) {
+        parsed_response.is_no_store = true;
     }
     // private
-    if (buffer_str.find("private") != std::string::npos) {
-        response.is_private = true;
+    if (cache_control.find("private") != std::string::npos) {
+        parsed_response.is_private = true;
     }
 
     // Cache-Control fields
-    if(buffer_str.find("Cache-Control") != std::string::npos)
-        log_writer.write(id, "NOTE " + buffer_str.substr(buffer_str.find("Cache-Control"), buffer_str.find("\r\n", buffer_str.find("Cache-Control")) - buffer_str.find("Cache-Control")));
+    if(parsed_response.content.find("Cache-Control") != std::string::npos)
+        log_writer.write(id, "NOTE " + parsed_response.content.substr(parsed_response.content.find("Cache-Control"), parsed_response.content.find("\r\n", parsed_response.content.find("Cache-Control")) - parsed_response.content.find("Cache-Control")));
     // ETAG
-    if (!response.ETag.empty()) {
-        log_writer.write(id, "NOTE ETag: " + response.ETag);
+    if (!parsed_response.ETag.empty()) {
+        log_writer.write(id, "NOTE ETag: " + parsed_response.ETag);
     }
     // Last-Modified
-    if (response.last_modified != 0) {
-        std::string time_str = std::asctime(std::gmtime(&response.last_modified));
-        time_str.pop_back();
-        log_writer.write(id, "NOTE Last-Modified: " + time_str);
+    if (!parsed_response.last_modified.empty()) {
+        log_writer.write(id, "NOTE Last-Modified: " + parsed_response.last_modified);
     }
-    return response;
+    return parsed_response;
 }
 
-void revalidate(int id, int client_fd, int server_fd, request_item & request, cache_item &in_cache){
+void revalidate(int id, int client_fd, boost::beast::tcp_stream& stream, request_item & request, cache_item &in_cache){
     // revalidation
     // send the re-validation request to the server
-    std::string revalidation_request = request.first_line + "\r\n" + "Host: " + request.host + ":" + request.port + "\r\n";
+    boost::system::error_code ec;
+    boost::beast::http::request<boost::beast::http::string_body> req;
+    req.version(11);
+    req.method(boost::beast::http::verb::get);
+    req.target(request.url);
+    req.set(boost::beast::http::field::host, request.host + ":" + request.port);
+    req.set(boost::beast::http::field::user_agent, BOOST_BEAST_VERSION_STRING);
+    req.set(boost::beast::http::field::connection, "close");
+
     if(!in_cache.ETag.empty()){
-        revalidation_request += "If-None-Match: " + in_cache.ETag + "\r\n";
+        req.set(boost::beast::http::field::if_none_match, in_cache.ETag);
     }
-    if (in_cache.last_modified != 0){
-        char buf[128];
-        struct tm *gmt = gmtime(&in_cache.last_modified);
-        strftime(buf, sizeof buf, "%a, %d %b %Y %H:%M:%S GMT", gmt);
-        revalidation_request += "If-Modified-Since: ";
-        revalidation_request += buf;
-        revalidation_request += "\r\n";
-    }
-    revalidation_request += "Connection: close\r\n\r\n";
-    if (send( server_fd, revalidation_request.c_str(), revalidation_request.size(), 0) < 0) {
-        log_writer.write(id, "ERROR: Fail to send the re-validation request to the server");
-        return;
-    } else{
-        log_writer.write(id, "Requesting \"" + request.first_line + "\" from server " + request.host + ":" + request.port);
+    if (!in_cache.last_modified.empty()) {
+        req.set(boost::beast::http::field::if_modified_since, in_cache.last_modified);
     }
 
-    // receive the response from the server
-    cache_item revalidation_response = get_response(id, server_fd, request);
+    boost::beast::http::write(stream, req, ec);
+    if (ec) {
+        log_writer.write(id, "ERROR: Fail to send re-validation request to the server: " + ec.message());
+        send_error_response(client_fd, id, 502);
+        return;
+    }
+    log_writer.write(id, "Requesting re-validation \"" + request.first_line + "\" from the server");
+
+    // receive the parsed_response from the server
+    boost::beast::flat_buffer response_buff;
+    boost::beast::http::response<boost::beast::http::string_body> response;
+    boost::beast::http::read(stream, response_buff, response, ec);
+    if (ec) {
+        log_writer.write(id, "ERROR: Fail to receive the response from the server: " + ec.message());
+        send_error_response(client_fd, id, 502);
+        return;
+    }
+
+    // receive the parsed_response from the server
+    cache_item revalidation_response = parse_response(id, response, request);
     // if it is 304
     if (revalidation_response.status == "304") {
         // update the cache
@@ -223,26 +208,26 @@ void revalidate(int id, int client_fd, int server_fd, request_item & request, ca
         in_cache.response_time = revalidation_response.response_time;
         cache.update(request.first_line, in_cache);
         log_writer.write(id, "NOTE Re-validation succeeds, no need to update the cache");
-        // send the response to the client
+        // send the parsed_response to the client
         if (send(client_fd, in_cache.content.c_str(), in_cache.content.size(), 0) < 0) {
             log_writer.write(id, "ERROR: Fail to send the response to the client");
         } else{
-            log_writer.write(id, "Responding the response to the client");
+            log_writer.write(id, "Responding \"" + in_cache.first_line + "\" to the client");
         }
         return ;
     } else if (revalidation_response.status == "200"){
-        // if the response is cacheable
+        // if the parsed_response is cacheable
         if(check_cacheable(id, revalidation_response)){
             cache.update(request.first_line, revalidation_response);
             log_writer.write(id, "NOTE: Re-validation succeeds, update the cache");
         } else{
             log_writer.write(id, "NOTE: Re-validation succeeds, not cacheable");
         }
-        // send the response to the client
+        // send the parsed_response to the client
         if (send(client_fd, revalidation_response.content.c_str(), revalidation_response.content.size(), 0) < 0) {
             log_writer.write(id, "ERROR: Fail to send the response to the client");
         } else{
-            log_writer.write(id, "Responding the response to the client");
+            log_writer.write(id, "Responding \"" + revalidation_response.first_line + "\" to the client");
         }
         return;
     }

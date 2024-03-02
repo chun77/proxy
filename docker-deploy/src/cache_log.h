@@ -22,7 +22,9 @@ private:
 public:
     //initialize the log file
     Log(){
-        log_file.open("/var/log/erss/proxy.log");
+//        log_file.open("/var/log/erss/proxy.log");
+
+        log_file.open("proxy.log");
         if (!log_file.is_open()){
             throw std::runtime_error("cannot open log file");
         }
@@ -50,7 +52,7 @@ struct cache_item {
     std::time_t response_time = 0;
     std::time_t expiration_time = 0; // response_time + max_age or Expires
     std::string ETag;
-    std::time_t last_modified = 0;
+    std::string last_modified;
 
     // Cache-Control fields
     int max_age = -1; // -1 means not set

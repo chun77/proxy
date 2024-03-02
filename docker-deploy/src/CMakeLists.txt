@@ -10,10 +10,9 @@ find_package(Boost REQUIRED COMPONENTS filesystem system)
 include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
 
-#thread
-# Add thread support
-set(THREADS_PREFER_PTHREAD_FLAG ON)
-find_package(Threads REQUIRED)
+# OpenSSL
+find_package(OpenSSL REQUIRED)
+include_directories(${OPENSSL_INCLUDE_DIR})
 
 add_executable(my_proxy
         main.cpp
@@ -26,8 +25,7 @@ add_executable(my_proxy
         server.h
 )
 target_link_libraries(my_proxy
-        Boost::filesystem
-        Boost::system
-        Threads::Threads # Add thread support
+        ${Boost_LIBRARIES}
+        ${OPENSSL_LIBRARIES}
 )
 

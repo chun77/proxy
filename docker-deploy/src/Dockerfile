@@ -14,10 +14,10 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # If you're on an ARM machine, download the correct CMake binary for ARM
-RUN wget https://github.com/Kitware/CMake/releases/download/v3.27.0/cmake-3.27.0-Linux-aarch64.sh \
- && chmod +x cmake-3.27.0-Linux-aarch64.sh \
- && ./cmake-3.27.0-Linux-aarch64.sh --skip-license --prefix=/usr/local \
- && rm cmake-3.27.0-Linux-aarch64.sh
+RUN wget https://github.com/Kitware/CMake/releases/download/v3.29.0-rc2/cmake-3.29.0-rc2-linux-x86_64.sh \
+ && chmod +x cmake-3.29.0-rc2-linux-x86_64.sh \
+ && ./cmake-3.29.0-rc2-linux-x86_64.sh --skip-license --prefix=/usr/local \
+ && rm cmake-3.29.0-rc2-linux-x86_64.sh
 
 # Set the working directory in the container
 WORKDIR /app

@@ -1,7 +1,7 @@
 #include "proxy.h"
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <signal.h>
+#include <csignal>
 
 // this function can be omitted because docker can daemonize the process for us
 void daemonize() {
@@ -42,8 +42,8 @@ void daemonize() {
     dup2(devNull, STDERR_FILENO);
 }
 
-int main(int argc, const char * argv[]) {
-    daemonize();
+int main() {
+//    daemonize();
     char port[6]= "12345";
     proxy p(port);
     try {

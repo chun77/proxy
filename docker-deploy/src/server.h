@@ -6,10 +6,9 @@
 #ifndef MY_PROXY_RESPONSE_H
 #define MY_PROXY_RESPONSE_H
 
-int connect_server(int id, const std::string &hostname, const std::string &port);
 bool check_cacheable(int id, cache_item &response);
-void revalidate(int id, int client_fd, int server_fd, request_item & request, cache_item &in_cache);
-
+void revalidate(int id, int client_fd, boost::beast::tcp_stream& stream, request_item & request, cache_item &in_cache);
+int connect_server(int id, const std::string &hostname, const std::string &port);
 // get and parse the response from the server
-cache_item get_response(int id, int server_fd, request_item &request);
+cache_item parse_response(int id, boost::beast::http::response<boost::beast::http::string_body> &content, request_item &request);
 #endif //MY_PROXY_RESPONSE_H
