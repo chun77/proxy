@@ -96,9 +96,9 @@ void proxy::construct() {
         // single thread is for testing
 
 
-        handle_client_connection(ip_str, get_connection_id(), client_connection_fd);
-//        std::thread t(handle_client_connection, ip_str, get_connection_id(), client_connection_fd);
-//        t.detach();
+//        handle_client_connection(ip_str, get_connection_id(), client_connection_fd);
+        std::thread t(handle_client_connection, ip_str, get_connection_id(), client_connection_fd);
+        t.detach();
     } //while
 }
 

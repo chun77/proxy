@@ -1,18 +1,96 @@
-1: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:01 2024
-1: Responding "HTTP/1.1 200 Connection Established" to the client
-2: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:03 2024
-2: Responding "HTTP/1.1 200 Connection Established" to the client
-3: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:04 2024
-3: Responding "HTTP/1.1 200 Connection Established" to the client
-4: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:05 2024
-4: Responding "HTTP/1.1 200 Connection Established" to the client
-5: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:06 2024
+1: "GET http://www.haha.com/favicon.ico HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:31 2024
+4: "CONNECT firehose.us-west-2.amazonaws.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:31 2024
+5: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:31 2024
 5: Responding "HTTP/1.1 200 Connection Established" to the client
-6: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:09 2024
-6: Responding "HTTP/1.1 200 Connection Established" to the client
-7: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:10 2024
+4: Responding "HTTP/1.1 200 Connection Established" to the client
+1: not in cache
+1: Requesting "GET http://www.haha.com/favicon.ico HTTP/1.1" from server www.haha.com:80
+1: Received "HTTP/1.1 404 Not Found" from server www.haha.com:80
+1: not cacheable because status code is not 200
+1: Responding "HTTP/1.1 404 Not Found" to client
+7: "CONNECT www.haha.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:33 2024
 7: Responding "HTTP/1.1 200 Connection Established" to the client
-8: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:10 2024
-8: Responding "HTTP/1.1 200 Connection Established" to the client
-9: "CONNECT chat.openai.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:32:11 2024
-9: Responding "HTTP/1.1 200 Connection Established" to the client
+9: "POST http://r3.o.lencr.org/ HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:33 2024
+9: Sending the request to the server
+10: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:35 2024
+10: not in cache
+10: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from server detectportal.firefox.com:80
+10: Received "HTTP/1.1 200 OK" from server detectportal.firefox.com:80
+10: NOTE Cache-Control: public,must-revalidate,max-age=0,s-maxage=3600
+10: cached, but requires re-validation
+10: Responding "HTTP/1.1 200 OK" to client
+11: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:35 2024
+11: not in cache
+11: Requesting "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from server detectportal.firefox.com:80
+11: Received "HTTP/1.1 200 OK" from server detectportal.firefox.com:80
+11: NOTE Cache-Control: public,must-revalidate,max-age=0,s-maxage=3600
+11: cached, but requires re-validation
+11: Responding "HTTP/1.1 200 OK" to client
+3: WARNING: Connection closed by the client.
+3: WARNING: Received empty request from the client.
+3: "" from 127.0.0.1 @ Sat Mar  2 04:45:36 2024
+3: Responding "HTTP/1.1 400 Bad Request" to the client
+2: WARNING: Connection closed by the client.
+2: WARNING: Received empty request from the client.
+2: "" from 127.0.0.1 @ Sat Mar  2 04:45:36 2024
+2: Responding "HTTP/1.1 400 Bad Request" to the client
+6: WARNING: Connection closed by the client.
+6: WARNING: Received empty request from the client.
+6: "" from 127.0.0.1 @ Sat Mar  2 04:45:37 2024
+6: Responding "HTTP/1.1 400 Bad Request" to the client
+12: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:38 2024
+13: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:38 2024
+13: Responding "HTTP/1.1 200 Connection Established" to the client
+8: WARNING: Connection closed by the client.
+8: WARNING: Received empty request from the client.
+8: "" from 127.0.0.1 @ Sat Mar  2 04:45:38 2024
+8: Responding "HTTP/1.1 400 Bad Request" to the client
+12: Responding "HTTP/1.1 200 Connection Established" to the client
+14: "CONNECT www.mozilla.org:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:39 2024
+14: Responding "HTTP/1.1 200 Connection Established" to the client
+16: "CONNECT www.googletagmanager.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:41 2024
+17: "CONNECT accounts.firefox.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:41 2024
+16: Responding "HTTP/1.1 200 Connection Established" to the client
+17: Responding "HTTP/1.1 200 Connection Established" to the client
+19: "CONNECT www.google-analytics.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:41 2024
+19: Responding "HTTP/1.1 200 Connection Established" to the client
+15: WARNING: Connection closed by the client.
+15: WARNING: Received empty request from the client.
+15: "" from 127.0.0.1 @ Sat Mar  2 04:45:45 2024
+15: Responding "HTTP/1.1 400 Bad Request" to the client
+18: WARNING: Connection closed by the client.
+18: WARNING: Received empty request from the client.
+20: WARNING: Connection closed by the client.
+20: WARNING: Received empty request from the client.
+18: "" from 127.0.0.1 @ Sat Mar  2 04:45:47 2024
+20: "" from 127.0.0.1 @ Sat Mar  2 04:45:47 2024
+18: Responding "HTTP/1.1 400 Bad Request" to the client
+20: Responding "HTTP/1.1 400 Bad Request" to the client
+21: "CONNECT monitor.mozilla.org:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:57 2024
+21: Responding "HTTP/1.1 200 Connection Established" to the client
+23: "POST http://ocsp.pki.goog/s/gts1d4/CcmYawQhDUM HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:45:57 2024
+23: Sending the request to the server
+24: "CONNECT js.stripe.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:46:01 2024
+24: Responding "HTTP/1.1 200 Connection Established" to the client
+26: "CONNECT m.stripe.network:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:46:01 2024
+26: Responding "HTTP/1.1 200 Connection Established" to the client
+22: WARNING: Connection closed by the client.
+22: WARNING: Received empty request from the client.
+22: "" from 127.0.0.1 @ Sat Mar  2 04:46:02 2024
+22: Responding "HTTP/1.1 400 Bad Request" to the client
+28: "CONNECT m.stripe.com:443 HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:46:02 2024
+28: Responding "HTTP/1.1 200 Connection Established" to the client
+30: "POST http://ocsp.digicert.com/ HTTP/1.1" from 127.0.0.1 @ Sat Mar  2 04:46:02 2024
+30: Sending the request to the server
+25: WARNING: Connection closed by the client.
+25: WARNING: Received empty request from the client.
+25: "" from 127.0.0.1 @ Sat Mar  2 04:46:06 2024
+25: Responding "HTTP/1.1 400 Bad Request" to the client
+27: WARNING: Connection closed by the client.
+27: WARNING: Received empty request from the client.
+27: "" from 127.0.0.1 @ Sat Mar  2 04:46:07 2024
+27: Responding "HTTP/1.1 400 Bad Request" to the client
+29: WARNING: Connection closed by the client.
+29: WARNING: Received empty request from the client.
+29: "" from 127.0.0.1 @ Sat Mar  2 04:46:08 2024
+29: Responding "HTTP/1.1 400 Bad Request" to the client

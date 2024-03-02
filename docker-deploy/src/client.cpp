@@ -137,13 +137,13 @@ request_item get_request(int id, int client_fd) {
         error_occurred = true;
     } else {
         // Connection closed by the client
-        log_writer.write(id, "ERROR: Connection closed by the client.");
+        log_writer.write(id, "WARNING: Connection closed by the client.");
         error_occurred = true;
     }
 
     if (buffer_str.empty()) {
         // No data received, treat as an error or handle accordingly
-        log_writer.write(id, "ERROR: Received empty request from the client.");
+        log_writer.write(id, "WARNING: Received empty request from the client.");
         error_occurred = true;
     }
 
@@ -200,7 +200,7 @@ void handle_connect(int id, int client_fd, int server_fd) {
     // Forward the data between the client and the server
     int max_fd = std::max(client_fd, server_fd) + 1; // the first argument of select() should be the highest-numbered file descriptor plus 1
     fd_set read_fds; // Set of file descriptors to read from
-    char buffer[4096]; // Adjust size as needed
+    char buffer[65536];
     while (true) {
         FD_ZERO(&read_fds);// Clear the set
         FD_SET(client_fd, &read_fds); // Add the client_fd to the set
@@ -245,8 +245,6 @@ void handle_post(int id, int client_fd, int server_fd, const std::string& reques
         log_writer.write(id, "Sending the request to the server");
     }
 
-    std::cout<<"request to server: "<<request_to_server<<std::endl;
-
     // receive the response from the server
     const int buffer_size = 65536;
     char buffer[buffer_size];
@@ -259,8 +257,8 @@ void handle_post(int id, int client_fd, int server_fd, const std::string& reques
         log_writer.write(id, "WARNING: Received nothing from the server");
         return;
     }
+    log_writer.write(id, "Received the response from the server");
 
-    std::cout<<"response from server: "<<buffer_str<<std::endl;
 
     // send the response to the client
     const char* response_to_client = buffer_str.c_str();

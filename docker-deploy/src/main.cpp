@@ -43,7 +43,7 @@ void daemonize() {
 }
 
 int main() {
-//    daemonize();
+    daemonize();
     char port[6]= "12345";
     proxy p(port);
     try {
