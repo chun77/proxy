@@ -1,220 +1,1514 @@
-1: "CONNECT p3epspumangb5dvijf52er7wdi.appsync-realtime-api.us-east-1.amazonaws.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:06 2024
+1: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:09 2024
 1: Responding "HTTP/1.1 200 Connection Established" to the client
-2: "CONNECT chatgpt-async-webps-prod-eastus-0.webpubsub.azure.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:07 2024
-3: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:07 2024
-4: "CONNECT p3epspumangb5dvijf52er7wdi.appsync-api.us-east-1.amazonaws.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:07 2024
-3: Responding "HTTP/1.1 200 Connection Established" to the client
-2: Responding "HTTP/1.1 200 Connection Established" to the client
-4: Responding "HTTP/1.1 200 Connection Established" to the client
-5: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:09 2024
-6: "CONNECT www.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:09 2024
-6: Responding "HTTP/1.1 200 Connection Established" to the client
-5: Responding "HTTP/1.1 200 Connection Established" to the client
-7: "CONNECT ff-proxy.leetcode.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:09 2024
-7: Responding "HTTP/1.1 200 Connection Established" to the client
-8: "CONNECT vfw.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
-9: "CONNECT dt.adsafeprotected.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
-11: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
-10: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
-10: Responding "HTTP/1.1 200 Connection Established" to the client
-11: Responding "HTTP/1.1 200 Connection Established" to the client
-12: "CONNECT pagead2.googlesyndication.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
-9: Responding "HTTP/1.1 200 Connection Established" to the client
+2: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:23 2024
+2: not in cache
+2: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+2: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+2: NOTE Cache-Control: no-cache
+2: not cacheable because no-cache
+2: Responding "HTTP/1.1 200 OK" to client
+3: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:23 2024
+3: not in cache
+3: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+3: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+3: NOTE Cache-Control: no-cache
+3: not cacheable because no-cache
+3: Responding "HTTP/1.1 200 OK" to client
+4: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:23 2024
+4: not in cache
+4: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+4: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+4: NOTE Cache-Control: no-cache
+4: not cacheable because no-cache
+4: Responding "HTTP/1.1 200 OK" to client
+5: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:23 2024
+5: not in cache
+5: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+5: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+5: NOTE Cache-Control: no-cache
+5: not cacheable because no-cache
+5: Responding "HTTP/1.1 200 OK" to client
+6: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:24 2024
+6: not in cache
+6: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+6: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+6: NOTE Cache-Control: no-cache
+6: not cacheable because no-cache
+6: Responding "HTTP/1.1 200 OK" to client
+7: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:24 2024
+7: not in cache
+7: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+7: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+7: NOTE Cache-Control: no-cache
+7: not cacheable because no-cache
+7: Responding "HTTP/1.1 200 OK" to client
+8: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:24 2024
+8: not in cache
+8: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+8: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+8: NOTE Cache-Control: no-cache
+8: not cacheable because no-cache
+8: Responding "HTTP/1.1 200 OK" to client
+9: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:25 2024
+9: not in cache
+9: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+9: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+9: NOTE Cache-Control: no-cache
+9: not cacheable because no-cache
+9: Responding "HTTP/1.1 200 OK" to client
+10: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:25 2024
+10: not in cache
+10: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+10: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+10: NOTE Cache-Control: no-cache
+10: not cacheable because no-cache
+10: Responding "HTTP/1.1 200 OK" to client
+11: "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:25 2024
+11: not in cache
+11: Requesting "GET http://run.mocky.io/v3/5ddafa51-37f0-4afb-bc58-1390b678d100 HTTP/1.1" from server run.mocky.io:80
+11: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+11: NOTE Cache-Control: no-cache
+11: not cacheable because no-cache
+11: Responding "HTTP/1.1 200 OK" to client
+12: "CONNECT firefox-api-proxy.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:19:55 2024
 12: Responding "HTTP/1.1 200 Connection Established" to the client
-8: Responding "HTTP/1.1 200 Connection Established" to the client
-13: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
-14: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
-15: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:10 2024
-15: Responding "HTTP/1.1 200 Connection Established" to the client
+13: "CONNECT firefox-api-proxy.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:24:59 2024
 13: Responding "HTTP/1.1 200 Connection Established" to the client
-14: Responding "HTTP/1.1 200 Connection Established" to the client
-16: "CONNECT www.googletagservices.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+16: "CONNECT firefox-api-proxy.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:29:59 2024
+14: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:29:59 2024
+15: "CONNECT spocs.getpocket.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:29:59 2024
 16: Responding "HTTP/1.1 200 Connection Established" to the client
-17: "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-18: "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+14: Responding "HTTP/1.1 200 Connection Established" to the client
+15: Responding "HTTP/1.1 200 Connection Established" to the client
+17: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:34:54 2024
 17: Responding "HTTP/1.1 200 Connection Established" to the client
-18: Responding "HTTP/1.1 200 Connection Established" to the client
-19: "CONNECT completion.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-20: "CONNECT ad.doubleclick.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-20: Responding "HTTP/1.1 200 Connection Established" to the client
+18: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:34:54 2024
+18: Sending the request to the server
+19: "CONNECT firefox-api-proxy.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:34:59 2024
 19: Responding "HTTP/1.1 200 Connection Established" to the client
-21: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-22: "CONNECT pixel.adsafeprotected.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-21: Responding "HTTP/1.1 200 Connection Established" to the client
+20: "CONNECT push.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:40 2024
+20: Responding "HTTP/1.1 200 Connection Established" to the client
+21: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:41 2024
+21: Sending the request to the server
+22: "CONNECT push.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:43 2024
 22: Responding "HTTP/1.1 200 Connection Established" to the client
-23: "CONNECT tiny.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-25: "CONNECT metrics.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-24: "CONNECT ad.doubleclick.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-26: "CONNECT p3epspumangb5dvijf52er7wdi.appsync-realtime-api.us-east-1.amazonaws.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-27: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-28: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-24: Responding "HTTP/1.1 200 Connection Established" to the client
-29: "CONNECT d23tl967axkois.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-27: Responding "HTTP/1.1 200 Connection Established" to the client
-26: Responding "HTTP/1.1 200 Connection Established" to the client
-28: Responding "HTTP/1.1 200 Connection Established" to the client
+23: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:48 2024
+24: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:48 2024
 23: Responding "HTTP/1.1 200 Connection Established" to the client
-30: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
+24: Responding "HTTP/1.1 200 Connection Established" to the client
+25: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:48 2024
 25: Responding "HTTP/1.1 200 Connection Established" to the client
-31: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-32: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-30: Responding "HTTP/1.1 200 Connection Established" to the client
-33: "CONNECT midway-auth.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-31: Responding "HTTP/1.1 200 Connection Established" to the client
-32: Responding "HTTP/1.1 200 Connection Established" to the client
-29: Responding "HTTP/1.1 200 Connection Established" to the client
-34: "CONNECT ad.doubleclick.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-35: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-36: "CONNECT pagead2.googlesyndication.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-37: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-38: "CONNECT player.stats.live-video.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-39: "CONNECT 4b64d6fa612f.us-east-1.playback.live-video.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:11 2024
-36: Responding "HTTP/1.1 200 Connection Established" to the client
-34: Responding "HTTP/1.1 200 Connection Established" to the client
-35: Responding "HTTP/1.1 200 Connection Established" to the client
-37: Responding "HTTP/1.1 200 Connection Established" to the client
-33: Responding "HTTP/1.1 200 Connection Established" to the client
-39: Responding "HTTP/1.1 200 Connection Established" to the client
-40: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:12 2024
-38: Responding "HTTP/1.1 200 Connection Established" to the client
-40: Responding "HTTP/1.1 200 Connection Established" to the client
-41: "CONNECT video-weaver.ord56.hls.live-video.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:12 2024
-41: Responding "HTTP/1.1 200 Connection Established" to the client
-42: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
-42: Responding "HTTP/1.1 200 Connection Established" to the client
-43: "CONNECT t.myvisualiq.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
-44: "CONNECT crb.kargo.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
-43: ERROR: cannot get address info for server host: Name or service not known
-43: ERROR: Fail to create a new connection to the server
-43: Responding "HTTP/1.1 502 Bad Gateway" to the client
-44: Responding "HTTP/1.1 200 Connection Established" to the client
-45: "CONNECT match.360yield.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
-45: Responding "HTTP/1.1 200 Connection Established" to the client
-46: "CONNECT usersync.samplicio.us:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:13 2024
+26: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:52 2024
+26: not in cache
+26: Requesting "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from server run.mocky.io:80
+26: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+26: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+26: cached, but requires re-validation
+26: Responding "HTTP/1.1 200 OK" to client
+27: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:52 2024
+27: in cache, but requires re-validation
+27: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+27: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+27: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+27: cached, but requires re-validation
+27: Cache updated with the new content from the origin server.
+28: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:52 2024
+28: in cache, but requires re-validation
+28: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+28: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+28: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+28: cached, but requires re-validation
+28: Cache updated with the new content from the origin server.
+29: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:52 2024
+29: in cache, but requires re-validation
+29: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+29: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+29: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+29: cached, but requires re-validation
+29: Cache updated with the new content from the origin server.
+30: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:53 2024
+30: in cache, but requires re-validation
+30: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+30: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+30: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+30: cached, but requires re-validation
+30: Cache updated with the new content from the origin server.
+31: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:53 2024
+31: in cache, but requires re-validation
+31: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+31: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+31: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+31: cached, but requires re-validation
+31: Cache updated with the new content from the origin server.
+32: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:53 2024
+32: in cache, but requires re-validation
+32: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+32: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+32: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+32: cached, but requires re-validation
+32: Cache updated with the new content from the origin server.
+33: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:53 2024
+33: in cache, but requires re-validation
+33: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+33: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+33: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+33: cached, but requires re-validation
+33: Cache updated with the new content from the origin server.
+34: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:54 2024
+34: in cache, but requires re-validation
+34: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+34: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+34: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+34: cached, but requires re-validation
+34: Cache updated with the new content from the origin server.
+35: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:35:54 2024
+35: in cache, but requires re-validation
+35: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+35: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+35: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+35: cached, but requires re-validation
+35: Cache updated with the new content from the origin server.
+36: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:32 2024
+36: in cache, but requires re-validation
+36: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+36: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+36: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+36: cached, but requires re-validation
+36: Cache updated with the new content from the origin server.
+37: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:32 2024
+37: in cache, but requires re-validation
+37: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+37: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+37: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+37: cached, but requires re-validation
+37: Cache updated with the new content from the origin server.
+38: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:32 2024
+38: in cache, but requires re-validation
+38: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+38: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+38: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+38: cached, but requires re-validation
+38: Cache updated with the new content from the origin server.
+39: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:33 2024
+39: in cache, but requires re-validation
+39: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+39: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+39: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+39: cached, but requires re-validation
+39: Cache updated with the new content from the origin server.
+40: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:33 2024
+40: in cache, but requires re-validation
+40: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+40: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+40: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+40: cached, but requires re-validation
+40: Cache updated with the new content from the origin server.
+41: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:33 2024
+41: in cache, but requires re-validation
+41: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+41: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+41: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+41: cached, but requires re-validation
+41: Cache updated with the new content from the origin server.
+42: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:34 2024
+42: in cache, but requires re-validation
+42: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+42: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+42: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+42: cached, but requires re-validation
+42: Cache updated with the new content from the origin server.
+43: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:34 2024
+43: in cache, but requires re-validation
+43: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+43: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+43: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+43: cached, but requires re-validation
+43: Cache updated with the new content from the origin server.
+44: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:34 2024
+44: in cache, but requires re-validation
+44: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+44: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+44: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+44: cached, but requires re-validation
+44: Cache updated with the new content from the origin server.
+45: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:37:34 2024
+45: in cache, but requires re-validation
+45: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+45: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+45: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+45: cached, but requires re-validation
+45: Cache updated with the new content from the origin server.
+46: "CONNECT www.expedia.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:05 2024
 46: Responding "HTTP/1.1 200 Connection Established" to the client
-47: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:15 2024
+47: "CONNECT c.travel-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:06 2024
+48: "CONNECT c.travel-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:06 2024
+49: "CONNECT c.travel-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:06 2024
+50: WARNING: Connection closed by the client.
+50: WARNING: Received empty request from the client.
+50: "" from 174.109.104.187 @ Sun Mar  3 04:38:06 2024
+50: Responding "HTTP/1.1 400 Bad Request" to the client
+52: "CONNECT c.travel-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:06 2024
+51: "CONNECT c.travel-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:06 2024
 47: Responding "HTTP/1.1 200 Connection Established" to the client
-48: "CONNECT clients4.google.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:21 2024
 48: Responding "HTTP/1.1 200 Connection Established" to the client
-49: "CONNECT ade.googlesyndication.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:22 2024
-49: Responding "HTTP/1.1 200 Connection Established" to the client
-50: "CONNECT us.edstem.org:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:34 2024
-50: Responding "HTTP/1.1 200 Connection Established" to the client
-51: "CONNECT optimizationguide-pa.googleapis.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:42 2024
 51: Responding "HTTP/1.1 200 Connection Established" to the client
-52: "CONNECT us.edstem.org:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
-53: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+49: Responding "HTTP/1.1 200 Connection Established" to the client
 52: Responding "HTTP/1.1 200 Connection Established" to the client
-54: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
-53: Responding "HTTP/1.1 200 Connection Established" to the client
+54: "CONNECT c.travel-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:07 2024
 54: Responding "HTTP/1.1 200 Connection Established" to the client
-55: "CONNECT us.edstem.org:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
-55: Responding "HTTP/1.1 200 Connection Established" to the client
-56: "CONNECT completion.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
-56: Responding "HTTP/1.1 200 Connection Established" to the client
-57: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
-57: Responding "HTTP/1.1 200 Connection Established" to the client
-58: "CONNECT t.myvisualiq.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
-58: ERROR: cannot get address info for server host: Name or service not known
-58: ERROR: Fail to create a new connection to the server
-58: Responding "HTTP/1.1 502 Bad Gateway" to the client
-59: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:43 2024
+59: "CONNECT www.uciservice.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:07 2024
+58: "CONNECT www.uciservice.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:07 2024
+58: Responding "HTTP/1.1 200 Connection Established" to the client
 59: Responding "HTTP/1.1 200 Connection Established" to the client
-60: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:17:44 2024
+60: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:07 2024
 60: Responding "HTTP/1.1 200 Connection Established" to the client
-61: "CONNECT beacons.gcp.gvt2.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:12 2024
+61: "CONNECT b.travel-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:07 2024
 61: Responding "HTTP/1.1 200 Connection Established" to the client
-62: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:12 2024
-62: Responding "HTTP/1.1 200 Connection Established" to the client
-63: "CONNECT d1cgrmilfgg1y.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:13 2024
-64: "CONNECT d1nruqhae353qc.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:13 2024
-63: Responding "HTTP/1.1 200 Connection Established" to the client
-64: Responding "HTTP/1.1 200 Connection Established" to the client
-65: "CONNECT d39x00gckxu2jb.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:13 2024
+63: "CONNECT www.tamgrt.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+65: "CONNECT www.googletagmanager.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+64: "CONNECT www.uqd.io:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
 65: Responding "HTTP/1.1 200 Connection Established" to the client
-66: "CONNECT api-amazondevices.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
+64: Responding "HTTP/1.1 200 Connection Established" to the client
+66: "CONNECT vacadapter.vap.expedia.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+67: "CONNECT www.trvl-px.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+63: Responding "HTTP/1.1 200 Connection Established" to the client
+68: "CONNECT browser-intake-datadoghq.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
 66: Responding "HTTP/1.1 200 Connection Established" to the client
-67: "CONNECT api-amazondevices.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
-67: Responding "HTTP/1.1 200 Connection Established" to the client
-68: "CONNECT content-autofill.googleapis.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
-69: "CONNECT d2h8zr0m6mus4x.cloudfront.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
 68: Responding "HTTP/1.1 200 Connection Established" to the client
-69: Responding "HTTP/1.1 200 Connection Established" to the client
-70: "CONNECT api-amazondevices.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
-70: Responding "HTTP/1.1 200 Connection Established" to the client
-71: "CONNECT api-amazondevices.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
-72: "CONNECT completion.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:15 2024
-71: Responding "HTTP/1.1 200 Connection Established" to the client
+70: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+67: Responding "HTTP/1.1 200 Connection Established" to the client
+70: Sending the request to the server
+72: "CONNECT t.promotionx.io:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
 72: Responding "HTTP/1.1 200 Connection Established" to the client
-73: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-73: Responding "HTTP/1.1 200 Connection Established" to the client
-74: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
+71: "CONNECT browser-intake-datadoghq.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+73: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+71: Responding "HTTP/1.1 200 Connection Established" to the client
+73: Sending the request to the server
+74: "CONNECT vap.expedia.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+69: "CONNECT www.trvl-px.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+69: Responding "HTTP/1.1 200 Connection Established" to the client
 74: Responding "HTTP/1.1 200 Connection Established" to the client
-75: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-76: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-77: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-79: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-78: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-80: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-80: Responding "HTTP/1.1 200 Connection Established" to the client
+76: "CONNECT browser-intake-datadoghq.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+55: "CONNECT a.travel-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+78: "CONNECT browser-intake-datadoghq.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+79: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
+55: Responding "HTTP/1.1 200 Connection Established" to the client
 76: Responding "HTTP/1.1 200 Connection Established" to the client
-77: Responding "HTTP/1.1 200 Connection Established" to the client
-79: Responding "HTTP/1.1 200 Connection Established" to the client
+79: Sending the request to the server
+80: "CONNECT cdn.cookielaw.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
 78: Responding "HTTP/1.1 200 Connection Established" to the client
-75: Responding "HTTP/1.1 200 Connection Established" to the client
-81: "CONNECT www.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-82: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-83: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-84: "CONNECT data.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:16 2024
-83: Responding "HTTP/1.1 200 Connection Established" to the client
-82: Responding "HTTP/1.1 200 Connection Established" to the client
-84: Responding "HTTP/1.1 200 Connection Established" to the client
+80: Responding "HTTP/1.1 200 Connection Established" to the client
+81: "CONNECT accounts.google.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:08 2024
 81: Responding "HTTP/1.1 200 Connection Established" to the client
-85: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
-86: "CONNECT cloudfront-labs.amazonaws.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
-85: Responding "HTTP/1.1 200 Connection Established" to the client
-87: "CONNECT t.myvisualiq.net:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
-88: "CONNECT crb.kargo.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
-87: ERROR: cannot get address info for server host: Name or service not known
-87: ERROR: Fail to create a new connection to the server
-87: ERROR: Fail to send "HTTP/1.1 502 Bad Gateway" to the client
+84: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:09 2024
+85: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:09 2024
+84: Sending the request to the server
+85: Sending the request to the server
+86: "CONNECT vap.expedia.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:09 2024
+86: Responding "HTTP/1.1 200 Connection Established" to the client
+87: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:10 2024
+88: "CONNECT geolocation.onetrust.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:10 2024
+87: Sending the request to the server
 88: Responding "HTTP/1.1 200 Connection Established" to the client
-89: "CONNECT match.360yield.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
+89: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:10 2024
 89: Responding "HTTP/1.1 200 Connection Established" to the client
-90: "CONNECT usersync.samplicio.us:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:18 2024
-90: Responding "HTTP/1.1 200 Connection Established" to the client
-91: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:19 2024
-92: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:19 2024
-93: "CONNECT ara.paa-reporting-advertising.amazon:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:19 2024
-91: Responding "HTTP/1.1 200 Connection Established" to the client
-92: Responding "HTTP/1.1 200 Connection Established" to the client
+92: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:10 2024
+92: Sending the request to the server
+93: "CONNECT dpm.demdex.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:10 2024
 93: Responding "HTTP/1.1 200 Connection Established" to the client
-94: "CONNECT ff-proxy.leetcode.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:19 2024
-94: Responding "HTTP/1.1 200 Connection Established" to the client
-95: "CONNECT clients4.google.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:23 2024
-95: Responding "HTTP/1.1 200 Connection Established" to the client
-96: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:36 2024
-96: Responding "HTTP/1.1 200 Connection Established" to the client
-97: "CONNECT gitlab.oit.duke.edu:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:53 2024
+53: WARNING: Connection closed by the client.
+53: WARNING: Received empty request from the client.
+53: "" from 174.109.104.187 @ Sun Mar  3 04:38:11 2024
+53: Responding "HTTP/1.1 400 Bad Request" to the client
+56: WARNING: Connection closed by the client.
+56: WARNING: Received empty request from the client.
+56: "" from 174.109.104.187 @ Sun Mar  3 04:38:12 2024
+56: Responding "HTTP/1.1 400 Bad Request" to the client
+57: WARNING: Connection closed by the client.
+57: WARNING: Received empty request from the client.
+57: "" from 174.109.104.187 @ Sun Mar  3 04:38:12 2024
+57: Responding "HTTP/1.1 400 Bad Request" to the client
+97: "CONNECT maps.googleapis.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:13 2024
+98: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:13 2024
 97: Responding "HTTP/1.1 200 Connection Established" to the client
-98: "CONNECT neat-iodine-05e.notion.site:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:18:59 2024
 98: Responding "HTTP/1.1 200 Connection Established" to the client
-99: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:08 2024
-99: Responding "HTTP/1.1 200 Connection Established" to the client
-100: "CONNECT beacons.gcp.gvt2.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:19 2024
-100: Responding "HTTP/1.1 200 Connection Established" to the client
-101: "CONNECT ff-proxy.leetcode.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:29 2024
-101: Responding "HTTP/1.1 200 Connection Established" to the client
-102: "CONNECT neat-iodine-05e.notion.site:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:32 2024
+100: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:13 2024
+101: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:13 2024
+100: Sending the request to the server
+101: Sending the request to the server
+75: WARNING: Connection closed by the client.
+75: WARNING: Received empty request from the client.
+75: "" from 174.109.104.187 @ Sun Mar  3 04:38:13 2024
+75: Responding "HTTP/1.1 400 Bad Request" to the client
+62: WARNING: Connection closed by the client.
+62: WARNING: Received empty request from the client.
+62: "" from 174.109.104.187 @ Sun Mar  3 04:38:13 2024
+62: Responding "HTTP/1.1 400 Bad Request" to the client
+77: WARNING: Connection closed by the client.
+77: WARNING: Received empty request from the client.
+77: "" from 174.109.104.187 @ Sun Mar  3 04:38:13 2024
+77: Responding "HTTP/1.1 400 Bad Request" to the client
+102: "CONNECT images.trvl-media.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:14 2024
 102: Responding "HTTP/1.1 200 Connection Established" to the client
-86: ERROR: cannot connect to socket for server, hostname: cloudfront-labs.amazonaws.com, port: 443, error: Connection refused
-86: ERROR: Fail to create a new connection to the server
-86: ERROR: Fail to send "HTTP/1.1 502 Bad Gateway" to the client
-103: "CONNECT ssl.gstatic.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:37 2024
+103: "CONNECT accounts.google.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:14 2024
 103: Responding "HTTP/1.1 200 Connection Established" to the client
-104: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:19:38 2024
-104: Responding "HTTP/1.1 200 Connection Established" to the client
-105: "CONNECT ab.chatgpt.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:20:03 2024
+82: WARNING: Connection closed by the client.
+82: WARNING: Received empty request from the client.
+82: "" from 174.109.104.187 @ Sun Mar  3 04:38:14 2024
+82: Responding "HTTP/1.1 400 Bad Request" to the client
+83: WARNING: Connection closed by the client.
+83: WARNING: Received empty request from the client.
+83: "" from 174.109.104.187 @ Sun Mar  3 04:38:14 2024
+83: Responding "HTTP/1.1 400 Bad Request" to the client
+104: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:15 2024
+104: Sending the request to the server
+105: "CONNECT securepubads.g.doubleclick.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:15 2024
 105: Responding "HTTP/1.1 200 Connection Established" to the client
-106: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 192.168.65.1 @ Fri Mar  1 17:20:11 2024
-106: Responding "HTTP/1.1 200 Connection Established" to the client
+91: WARNING: Connection closed by the client.
+91: WARNING: Received empty request from the client.
+91: "" from 174.109.104.187 @ Sun Mar  3 04:38:15 2024
+91: Responding "HTTP/1.1 400 Bad Request" to the client
+90: WARNING: Connection closed by the client.
+90: WARNING: Received empty request from the client.
+90: "" from 174.109.104.187 @ Sun Mar  3 04:38:15 2024
+90: Responding "HTTP/1.1 400 Bad Request" to the client
+107: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+107: Sending the request to the server
+109: "CONNECT 9224405.fls.doubleclick.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+109: Responding "HTTP/1.1 200 Connection Established" to the client
+110: "CONNECT insight.adsrvr.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+111: "CONNECT connect.facebook.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+112: "CONNECT bat.bing.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+113: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+113: Sending the request to the server
+110: Responding "HTTP/1.1 200 Connection Established" to the client
+112: Responding "HTTP/1.1 200 Connection Established" to the client
+111: Responding "HTTP/1.1 200 Connection Established" to the client
+94: WARNING: Connection closed by the client.
+94: WARNING: Received empty request from the client.
+94: "" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+94: Responding "HTTP/1.1 400 Bad Request" to the client
+95: WARNING: Connection closed by the client.
+95: WARNING: Received empty request from the client.
+95: "" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+95: Responding "HTTP/1.1 400 Bad Request" to the client
+96: WARNING: Connection closed by the client.
+96: WARNING: Received empty request from the client.
+96: "" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+96: Responding "HTTP/1.1 400 Bad Request" to the client
+115: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+114: "POST http://ocsp.globalsign.com/gsgccr3dvtlsca2020 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:16 2024
+115: Sending the request to the server
+114: Sending the request to the server
+116: "CONNECT 430631d70c20727bb883c0485efdf980.safeframe.googlesyndication.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:18 2024
+116: Responding "HTTP/1.1 200 Connection Established" to the client
+117: "CONNECT 430631d70c20727bb883c0485efdf980.safeframe.googlesyndication.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:18 2024
+117: Responding "HTTP/1.1 200 Connection Established" to the client
+118: "CONNECT 430631d70c20727bb883c0485efdf980.safeframe.googlesyndication.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:18 2024
+118: Responding "HTTP/1.1 200 Connection Established" to the client
+119: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:18 2024
+120: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:18 2024
+119: Sending the request to the server
+120: Sending the request to the server
+121: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:18 2024
+121: Sending the request to the server
+122: "CONNECT adservice.google.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:18 2024
+122: Responding "HTTP/1.1 200 Connection Established" to the client
+125: "CONNECT ib.adnxs.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:18 2024
+125: Responding "HTTP/1.1 200 Connection Established" to the client
+99: WARNING: Connection closed by the client.
+99: WARNING: Received empty request from the client.
+99: "" from 174.109.104.187 @ Sun Mar  3 04:38:19 2024
+99: Responding "HTTP/1.1 400 Bad Request" to the client
+126: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:19 2024
+126: Sending the request to the server
+128: "CONNECT www.facebook.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:19 2024
+128: Responding "HTTP/1.1 200 Connection Established" to the client
+129: "CONNECT match.adsrvr.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:19 2024
+129: Responding "HTTP/1.1 200 Connection Established" to the client
+130: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:19 2024
+130: Sending the request to the server
+131: "POST http://ocsp.globalsign.com/gsgccr3dvtlsca2020 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:20 2024
+131: Sending the request to the server
+132: "CONNECT pagead2.googlesyndication.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:20 2024
+133: "CONNECT bs.serving-sys.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:20 2024
+132: Responding "HTTP/1.1 200 Connection Established" to the client
+133: Responding "HTTP/1.1 200 Connection Established" to the client
+108: WARNING: Connection closed by the client.
+108: WARNING: Received empty request from the client.
+108: "" from 174.109.104.187 @ Sun Mar  3 04:38:21 2024
+108: Responding "HTTP/1.1 400 Bad Request" to the client
+106: WARNING: Connection closed by the client.
+106: WARNING: Received empty request from the client.
+106: "" from 174.109.104.187 @ Sun Mar  3 04:38:21 2024
+106: Responding "HTTP/1.1 400 Bad Request" to the client
+138: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:21 2024
+139: "POST http://ocsp.r2m02.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:21 2024
+138: Sending the request to the server
+139: Sending the request to the server
+140: "CONNECT secure-ds.serving-sys.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:23 2024
+140: Responding "HTTP/1.1 200 Connection Established" to the client
+143: "CONNECT lm.serving-sys.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:23 2024
+143: Responding "HTTP/1.1 200 Connection Established" to the client
+144: "CONNECT code.createjs.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+145: "POST http://ocsp.r2m01.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+144: Responding "HTTP/1.1 200 Connection Established" to the client
+145: Sending the request to the server
+127: WARNING: Connection closed by the client.
+127: WARNING: Received empty request from the client.
+127: "" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+127: Responding "HTTP/1.1 400 Bad Request" to the client
+123: WARNING: Connection closed by the client.
+123: WARNING: Received empty request from the client.
+123: "" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+123: Responding "HTTP/1.1 400 Bad Request" to the client
+124: WARNING: Connection closed by the client.
+124: WARNING: Received empty request from the client.
+124: "" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+124: Responding "HTTP/1.1 400 Bad Request" to the client
+142: "CONNECT lm.serving-sys.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+147: "CONNECT dc.arrivalist.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+142: Responding "HTTP/1.1 200 Connection Established" to the client
+147: Responding "HTTP/1.1 200 Connection Established" to the client
+151: "POST http://ocsp.r2m01.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+149: "POST http://ocsp.r2m02.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:24 2024
+151: Sending the request to the server
+149: Sending the request to the server
+136: WARNING: Connection closed by the client.
+136: WARNING: Received empty request from the client.
+136: "" from 174.109.104.187 @ Sun Mar  3 04:38:26 2024
+136: Responding "HTTP/1.1 400 Bad Request" to the client
+134: WARNING: Connection closed by the client.
+134: WARNING: Received empty request from the client.
+134: "" from 174.109.104.187 @ Sun Mar  3 04:38:26 2024
+134: Responding "HTTP/1.1 400 Bad Request" to the client
+137: WARNING: Connection closed by the client.
+137: WARNING: Received empty request from the client.
+137: "" from 174.109.104.187 @ Sun Mar  3 04:38:26 2024
+137: Responding "HTTP/1.1 400 Bad Request" to the client
+135: WARNING: Connection closed by the client.
+135: WARNING: Received empty request from the client.
+135: "" from 174.109.104.187 @ Sun Mar  3 04:38:26 2024
+135: Responding "HTTP/1.1 400 Bad Request" to the client
+150: "CONNECT lm.serving-sys.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:26 2024
+150: Responding "HTTP/1.1 200 Connection Established" to the client
+153: "CONNECT ad.doubleclick.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:27 2024
+153: Responding "HTTP/1.1 200 Connection Established" to the client
+155: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:27 2024
+155: Sending the request to the server
+156: "CONNECT lm.serving-sys.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:29 2024
+156: Responding "HTTP/1.1 200 Connection Established" to the client
+146: WARNING: Connection closed by the client.
+146: WARNING: Received empty request from the client.
+146: "" from 174.109.104.187 @ Sun Mar  3 04:38:29 2024
+146: Responding "HTTP/1.1 400 Bad Request" to the client
+141: WARNING: Connection closed by the client.
+141: WARNING: Received empty request from the client.
+141: "" from 174.109.104.187 @ Sun Mar  3 04:38:29 2024
+141: Responding "HTTP/1.1 400 Bad Request" to the client
+159: "CONNECT tpc.googlesyndication.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:29 2024
+159: Responding "HTTP/1.1 200 Connection Established" to the client
+160: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:30 2024
+160: Sending the request to the server
+148: WARNING: Connection closed by the client.
+148: WARNING: Received empty request from the client.
+148: "" from 174.109.104.187 @ Sun Mar  3 04:38:30 2024
+148: Responding "HTTP/1.1 400 Bad Request" to the client
+152: WARNING: Connection closed by the client.
+152: WARNING: Received empty request from the client.
+152: "" from 174.109.104.187 @ Sun Mar  3 04:38:30 2024
+152: Responding "HTTP/1.1 400 Bad Request" to the client
+114: WARNING: Received nothing from the server
+154: WARNING: Connection closed by the client.
+154: WARNING: Received empty request from the client.
+154: "" from 174.109.104.187 @ Sun Mar  3 04:38:32 2024
+154: Responding "HTTP/1.1 400 Bad Request" to the client
+163: "POST http://ocsp.globalsign.com/gsgccr3dvtlsca2020 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:32 2024
+163: Sending the request to the server
+157: WARNING: Connection closed by the client.
+157: WARNING: Received empty request from the client.
+157: "" from 174.109.104.187 @ Sun Mar  3 04:38:34 2024
+157: Responding "HTTP/1.1 400 Bad Request" to the client
+158: WARNING: Connection closed by the client.
+158: WARNING: Received empty request from the client.
+158: "" from 174.109.104.187 @ Sun Mar  3 04:38:35 2024
+158: Responding "HTTP/1.1 400 Bad Request" to the client
+131: WARNING: Received nothing from the server
+164: "POST http://ocsp.globalsign.com/gsgccr3dvtlsca2020 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:35 2024
+164: Sending the request to the server
+162: WARNING: Connection closed by the client.
+162: WARNING: Received empty request from the client.
+162: "" from 174.109.104.187 @ Sun Mar  3 04:38:37 2024
+162: Responding "HTTP/1.1 400 Bad Request" to the client
+161: WARNING: Connection closed by the client.
+161: WARNING: Received empty request from the client.
+161: "" from 174.109.104.187 @ Sun Mar  3 04:38:37 2024
+161: Responding "HTTP/1.1 400 Bad Request" to the client
+163: WARNING: Received nothing from the server
+164: WARNING: Received nothing from the server
+18: Received the response from the server
+18: Sending the response to the client
+165: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:38:54 2024
+165: Sending the request to the server
+84: Received the response from the server
+84: Sending the response to the client
+79: Received the response from the server
+79: Sending the response to the client
+73: Received the response from the server
+73: Sending the response to the client
+166: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:09 2024
+167: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:09 2024
+168: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:09 2024
+167: Sending the request to the server
+166: Sending the request to the server
+168: Sending the request to the server
+85: Received the response from the server
+85: Sending the response to the client
+169: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:09 2024
+169: Sending the request to the server
+115: Received the response from the server
+115: Sending the response to the client
+170: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:17 2024
+170: Sending the request to the server
+130: Received the response from the server
+130: Sending the response to the client
+171: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:20 2024
+171: Sending the request to the server
+139: WARNING: Received nothing from the server
+172: "POST http://ocsp.r2m02.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:21 2024
+172: Sending the request to the server
+145: WARNING: Received nothing from the server
+173: "POST http://ocsp.r2m01.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:24 2024
+173: Sending the request to the server
+151: WARNING: Received nothing from the server
+149: WARNING: Received nothing from the server
+174: "POST http://ocsp.r2m02.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:24 2024
+175: "POST http://ocsp.r2m01.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:39:24 2024
+175: Sending the request to the server
+174: Sending the request to the server
+176: "CONNECT firefox-api-proxy.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:40:03 2024
+176: Responding "HTTP/1.1 200 Connection Established" to the client
+168: Received the response from the server
+168: Sending the response to the client
+166: Received the response from the server
+166: Sending the response to the client
+167: Received the response from the server
+167: Sending the response to the client
+169: Received the response from the server
+169: Sending the response to the client
+177: "CONNECT browser-intake-datadoghq.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:40:14 2024
+177: Responding "HTTP/1.1 200 Connection Established" to the client
+170: Received the response from the server
+170: Sending the response to the client
+171: Received the response from the server
+171: Sending the response to the client
+172: WARNING: Received nothing from the server
+173: WARNING: Received nothing from the server
+175: WARNING: Received nothing from the server
+174: WARNING: Received nothing from the server
+178: "POST http://google.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:41:19 2024
+178: Sending the request to the server
+70: Received the response from the server
+70: Sending the response to the client
+179: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:08 2024
+179: Sending the request to the server
+87: Received the response from the server
+87: Sending the response to the client
+180: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:10 2024
+180: Sending the request to the server
+92: Received the response from the server
+92: Sending the response to the client
+181: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:11 2024
+181: Sending the request to the server
+100: Received the response from the server
+100: Sending the response to the client
+101: Received the response from the server
+101: Sending the response to the client
+182: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:14 2024
+182: Sending the request to the server
+183: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:14 2024
+183: Sending the request to the server
+104: Received the response from the server
+104: Sending the response to the client
+184: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:15 2024
+184: Sending the request to the server
+107: Received the response from the server
+107: Sending the response to the client
+185: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:16 2024
+185: Sending the request to the server
+113: Received the response from the server
+113: Sending the response to the client
+186: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:16 2024
+186: Sending the request to the server
+119: Received the response from the server
+119: Sending the response to the client
+120: Received the response from the server
+120: Sending the response to the client
+121: Received the response from the server
+121: Sending the response to the client
+188: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:18 2024
+187: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:18 2024
+189: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:18 2024
+188: Sending the request to the server
+187: Sending the request to the server
+189: Sending the request to the server
+126: Received the response from the server
+126: Sending the response to the client
+190: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:19 2024
+190: Sending the request to the server
+138: Received the response from the server
+138: Sending the response to the client
+191: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:21 2024
+191: Sending the request to the server
+155: Received the response from the server
+155: Sending the response to the client
+192: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:27 2024
+192: Sending the request to the server
+160: Received the response from the server
+160: Sending the response to the client
+193: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:30 2024
+193: Sending the request to the server
+194: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:42:39 2024
+194: not in cache
+194: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from server www.httpwatch.com:80
+194: Received "HTTP/1.1 200 OK" from server www.httpwatch.com:80
+194: NOTE Cache-Control: no-cache, no-store
+194: not cacheable because no-store
+194: Responding "HTTP/1.1 200 OK" to client
+165: Received the response from the server
+165: Sending the response to the client
+195: "CONNECT browser-intake-datadoghq.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:43:44 2024
+195: Responding "HTTP/1.1 200 Connection Established" to the client
+196: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:43:44 2024
+196: Sending the request to the server
+196: Received the response from the server
+196: Sending the response to the client
+197: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:44:45 2024
+197: Sending the request to the server
+198: "CONNECT firefox-api-proxy.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:45:05 2024
+199: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:45:05 2024
+198: Responding "HTTP/1.1 200 Connection Established" to the client
+199: Responding "HTTP/1.1 200 Connection Established" to the client
+178: Received the response from the server
+178: Sending the response to the client
+197: Received the response from the server
+197: Sending the response to the client
+21: Received the response from the server
+21: Sending the response to the client
+200: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:46:01 2024
+200: Sending the request to the server
+179: Received the response from the server
+179: Sending the response to the client
+180: Received the response from the server
+180: Sending the response to the client
+181: Received the response from the server
+181: Sending the response to the client
+201: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:46:11 2024
+201: Sending the request to the server
+182: Received the response from the server
+182: Sending the response to the client
+183: Received the response from the server
+183: Sending the response to the client
+184: Received the response from the server
+184: Sending the response to the client
+185: Received the response from the server
+185: Sending the response to the client
+186: Received the response from the server
+186: Sending the response to the client
+188: Received the response from the server
+188: Sending the response to the client
+187: Received the response from the server
+187: Sending the response to the client
+189: Received the response from the server
+189: Sending the response to the client
+202: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:46:19 2024
+203: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:46:19 2024
+202: Sending the request to the server
+203: Sending the request to the server
+190: Received the response from the server
+190: Sending the response to the client
+191: Received the response from the server
+191: Sending the response to the client
+192: Received the response from the server
+192: Sending the response to the client
+193: Received the response from the server
+193: Sending the response to the client
+204: "POST http://httpbin.org/forms/post HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:46:54 2024
+204: Sending the request to the server
+204: Received the response from the server
+204: Sending the response to the client
+205: "CONNECT browser-intake-datadoghq.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:48:44 2024
+205: Responding "HTTP/1.1 200 Connection Established" to the client
+206: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:48:44 2024
+206: Sending the request to the server
+206: Received the response from the server
+206: Sending the response to the client
+207: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:49:45 2024
+207: Sending the request to the server
+208: "CONNECT firefox-api-proxy.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:50:05 2024
+208: Responding "HTTP/1.1 200 Connection Established" to the client
+201: Received the response from the server
+201: Sending the response to the client
+209: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:50:11 2024
+209: Sending the request to the server
+202: Received the response from the server
+202: Sending the response to the client
+203: Received the response from the server
+203: Sending the response to the client
+207: Received the response from the server
+207: Sending the response to the client
+210: "CONNECT aus5.mozilla.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:50:50 2024
+210: Responding "HTTP/1.1 200 Connection Established" to the client
+211: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:50:50 2024
+211: Sending the request to the server
+212: "CONNECT shavar.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:50:50 2024
+212: Responding "HTTP/1.1 200 Connection Established" to the client
+213: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:50:51 2024
+213: Sending the request to the server
+214: "CONNECT normandy.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:13 2024
+214: Responding "HTTP/1.1 200 Connection Established" to the client
+215: "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:13 2024
+216: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:13 2024
+217: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:13 2024
+216: Responding "HTTP/1.1 200 Connection Established" to the client
+217: Responding "HTTP/1.1 200 Connection Established" to the client
+215: Responding "HTTP/1.1 200 Connection Established" to the client
+218: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:13 2024
+218: Responding "HTTP/1.1 200 Connection Established" to the client
+219: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:13 2024
+220: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:13 2024
+221: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:13 2024
+221: Sending the request to the server
+220: Sending the request to the server
+219: Sending the request to the server
+222: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:14 2024
+222: Responding "HTTP/1.1 200 Connection Established" to the client
+223: "CONNECT firefox-settings-attachments.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:15 2024
+224: "CONNECT classify-client.services.mozilla.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:16 2024
+223: Responding "HTTP/1.1 200 Connection Established" to the client
+224: Responding "HTTP/1.1 200 Connection Established" to the client
+225: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:16 2024
+225: Sending the request to the server
+226: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:16 2024
+226: Sending the request to the server
+227: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:17 2024
+227: not in cache
+227: Requesting "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from server run.mocky.io:80
+227: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+227: NOTE Cache-Control: max-age=120
+227: cached, expires at Sun Mar  3 04:53:18 2024
+227: Responding "HTTP/1.1 200 OK" to client
+228: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:18 2024
+228: in cache, valid
+228: Responding the response to the client
+229: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:18 2024
+229: in cache, valid
+229: Responding the response to the client
+230: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:18 2024
+231: "CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:18 2024
+230: in cache, valid
+230: Responding the response to the client
+231: Responding "HTTP/1.1 200 Connection Established" to the client
+232: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:18 2024
+232: in cache, valid
+232: Responding the response to the client
+233: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:18 2024
+234: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:18 2024
+234: Sending the request to the server
+233: in cache, valid
+233: Responding the response to the client
+235: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:19 2024
+235: in cache, valid
+235: Responding the response to the client
+236: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:19 2024
+236: in cache, valid
+236: Responding the response to the client
+237: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:19 2024
+237: in cache, valid
+237: Responding the response to the client
+238: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:19 2024
+238: in cache, valid
+238: Responding the response to the client
+239: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:31 2024
+239: in cache, valid
+239: Responding the response to the client
+240: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:31 2024
+240: in cache, valid
+240: Responding the response to the client
+241: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:31 2024
+241: in cache, valid
+241: Responding the response to the client
+242: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:31 2024
+242: in cache, valid
+242: Responding the response to the client
+243: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:31 2024
+243: in cache, valid
+243: Responding the response to the client
+244: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:32 2024
+244: in cache, valid
+244: Responding the response to the client
+245: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:32 2024
+245: in cache, valid
+245: Responding the response to the client
+246: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:32 2024
+246: in cache, valid
+246: Responding the response to the client
+247: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:32 2024
+247: in cache, valid
+247: Responding the response to the client
+248: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:32 2024
+248: in cache, valid
+248: Responding the response to the client
+249: "CONNECT run.mocky.io:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:39 2024
+250: "CONNECT chat.openai.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:39 2024
+251: "CONNECT run.mocky.io:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:39 2024
+249: Responding "HTTP/1.1 200 Connection Established" to the client
+251: Responding "HTTP/1.1 200 Connection Established" to the client
+250: Responding "HTTP/1.1 200 Connection Established" to the client
+252: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:43 2024
+252: Responding "HTTP/1.1 200 Connection Established" to the client
+211: Received the response from the server
+211: Sending the response to the client
+253: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:50 2024
+253: Sending the request to the server
+254: "CONNECT clients4.google.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:51:51 2024
+254: Responding "HTTP/1.1 200 Connection Established" to the client
+221: Received the response from the server
+221: Sending the response to the client
+255: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:14 2024
+255: Sending the request to the server
+256: "CONNECT neat-iodine-05e.notion.site:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:24 2024
+256: Responding "HTTP/1.1 200 Connection Established" to the client
+257: "CONNECT www.datavisor.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:26 2024
+257: Responding "HTTP/1.1 200 Connection Established" to the client
+258: "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+259: WARNING: Connection closed by the client.
+259: WARNING: Received empty request from the client.
+259: "" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+260: "CONNECT fonts.googleapis.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+259: Responding "HTTP/1.1 400 Bad Request" to the client
+260: Responding "HTTP/1.1 200 Connection Established" to the client
+262: "CONNECT www.googletagmanager.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+261: "CONNECT bb565ce950634f2b8ea6a56666c5f855.js.ubembed.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+263: "CONNECT app-ab19.marketo.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+264: "CONNECT stackpath.bootstrapcdn.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+265: "CONNECT www.youtube.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+262: Responding "HTTP/1.1 200 Connection Established" to the client
+266: "CONNECT cdnjs.cloudflare.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+267: WARNING: Connection closed by the client.
+267: WARNING: Received empty request from the client.
+267: "" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+267: Responding "HTTP/1.1 400 Bad Request" to the client
+258: Responding "HTTP/1.1 200 Connection Established" to the client
+265: Responding "HTTP/1.1 200 Connection Established" to the client
+264: Responding "HTTP/1.1 200 Connection Established" to the client
+266: Responding "HTTP/1.1 200 Connection Established" to the client
+278: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+280: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+263: Responding "HTTP/1.1 200 Connection Established" to the client
+278: Responding "HTTP/1.1 200 Connection Established" to the client
+280: Responding "HTTP/1.1 200 Connection Established" to the client
+261: Responding "HTTP/1.1 200 Connection Established" to the client
+281: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+282: "CONNECT a.quora.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+281: Sending the request to the server
+284: "CONNECT fonts.gstatic.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+283: "CONNECT fonts.gstatic.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+284: Responding "HTTP/1.1 200 Connection Established" to the client
+283: Responding "HTTP/1.1 200 Connection Established" to the client
+286: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+287: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+286: Sending the request to the server
+287: Sending the request to the server
+282: Responding "HTTP/1.1 200 Connection Established" to the client
+289: "CONNECT consent.cookiebot.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+290: "CONNECT tracking.g2crowd.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:27 2024
+289: Responding "HTTP/1.1 200 Connection Established" to the client
+290: Responding "HTTP/1.1 200 Connection Established" to the client
+293: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:28 2024
+294: "CONNECT q.quora.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:28 2024
+293: Responding "HTTP/1.1 200 Connection Established" to the client
+294: Responding "HTTP/1.1 200 Connection Established" to the client
+297: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:28 2024
+297: Sending the request to the server
+298: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:28 2024
+298: Sending the request to the server
+299: "CONNECT www.google-analytics.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:28 2024
+299: Responding "HTTP/1.1 200 Connection Established" to the client
+300: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:29 2024
+300: Sending the request to the server
+302: "CONNECT code.jquery.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:32 2024
+301: "CONNECT builder-assets.unbounce.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:32 2024
+303: "CONNECT ajax.googleapis.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:32 2024
+304: "CONNECT tracker.ub-analytics.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:32 2024
+303: Responding "HTTP/1.1 200 Connection Established" to the client
+302: Responding "HTTP/1.1 200 Connection Established" to the client
+304: Responding "HTTP/1.1 200 Connection Established" to the client
+301: Responding "HTTP/1.1 200 Connection Established" to the client
+308: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:32 2024
+308: Sending the request to the server
+296: WARNING: Connection closed by the client.
+296: WARNING: Received empty request from the client.
+296: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+296: Responding "HTTP/1.1 400 Bad Request" to the client
+295: WARNING: Connection closed by the client.
+295: WARNING: Received empty request from the client.
+295: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+295: Responding "HTTP/1.1 400 Bad Request" to the client
+291: WARNING: Connection closed by the client.
+291: WARNING: Received empty request from the client.
+291: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+269: WARNING: Connection closed by the client.
+269: WARNING: Received empty request from the client.
+269: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+291: Responding "HTTP/1.1 400 Bad Request" to the client
+269: Responding "HTTP/1.1 400 Bad Request" to the client
+276: WARNING: Connection closed by the client.
+276: WARNING: Received empty request from the client.
+276: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+276: Responding "HTTP/1.1 400 Bad Request" to the client
+275: WARNING: Connection closed by the client.
+275: WARNING: Received empty request from the client.
+275: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+275: Responding "HTTP/1.1 400 Bad Request" to the client
+271: WARNING: Connection closed by the client.
+271: WARNING: Received empty request from the client.
+271: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+271: Responding "HTTP/1.1 400 Bad Request" to the client
+268: WARNING: Connection closed by the client.
+268: WARNING: Received empty request from the client.
+268: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+268: Responding "HTTP/1.1 400 Bad Request" to the client
+285: WARNING: Connection closed by the client.
+285: WARNING: Received empty request from the client.
+272: WARNING: Connection closed by the client.
+272: WARNING: Received empty request from the client.
+273: WARNING: Connection closed by the client.
+273: WARNING: Received empty request from the client.
+273: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+292: WARNING: Connection closed by the client.
+292: WARNING: Received empty request from the client.
+288: WARNING: Connection closed by the client.
+288: WARNING: Received empty request from the client.
+272: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+270: WARNING: Connection closed by the client.
+270: WARNING: Received empty request from the client.
+270: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+272: Responding "HTTP/1.1 400 Bad Request" to the client
+270: Responding "HTTP/1.1 400 Bad Request" to the client
+277: WARNING: Connection closed by the client.
+277: WARNING: Received empty request from the client.
+277: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+277: Responding "HTTP/1.1 400 Bad Request" to the client
+274: WARNING: Connection closed by the client.
+279: WARNING: Connection closed by the client.
+279: WARNING: Received empty request from the client.
+274: WARNING: Received empty request from the client.
+274: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+274: Responding "HTTP/1.1 400 Bad Request" to the client
+288: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+288: Responding "HTTP/1.1 400 Bad Request" to the client
+285: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+285: Responding "HTTP/1.1 400 Bad Request" to the client
+273: Responding "HTTP/1.1 400 Bad Request" to the client
+279: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+279: Responding "HTTP/1.1 400 Bad Request" to the client
+292: "" from 174.109.104.187 @ Sun Mar  3 04:52:33 2024
+292: Responding "HTTP/1.1 400 Bad Request" to the client
+309: "CONNECT exp.notion.so:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:34 2024
+309: Responding "HTTP/1.1 200 Connection Established" to the client
+310: "CONNECT d9hhrg4mnvzow.cloudfront.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:34 2024
+311: "CONNECT events.ub-analytics.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:34 2024
+312: "CONNECT fonts.ub-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:34 2024
+310: Responding "HTTP/1.1 200 Connection Established" to the client
+312: Responding "HTTP/1.1 200 Connection Established" to the client
+311: Responding "HTTP/1.1 200 Connection Established" to the client
+325: "POST http://ocsp.r2m03.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+325: Sending the request to the server
+326: "CONNECT fonts.ub-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+327: "CONNECT fonts.ub-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+328: "CONNECT fonts.ub-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+329: "CONNECT fonts.ub-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+330: "CONNECT fonts.ub-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+331: "CONNECT fonts.ub-assets.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+331: Responding "HTTP/1.1 200 Connection Established" to the client
+330: Responding "HTTP/1.1 200 Connection Established" to the client
+329: Responding "HTTP/1.1 200 Connection Established" to the client
+328: Responding "HTTP/1.1 200 Connection Established" to the client
+327: Responding "HTTP/1.1 200 Connection Established" to the client
+326: Responding "HTTP/1.1 200 Connection Established" to the client
+332: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+332: Responding "HTTP/1.1 200 Connection Established" to the client
+334: "CONNECT j.6sc.co:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+335: "CONNECT connect.facebook.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+336: "CONNECT px.ads.linkedin.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+337: WARNING: Connection closed by the client.
+337: WARNING: Received empty request from the client.
+337: "" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+337: Responding "HTTP/1.1 400 Bad Request" to the client
+338: WARNING: Connection closed by the client.
+338: WARNING: Received empty request from the client.
+338: "" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+338: Responding "HTTP/1.1 400 Bad Request" to the client
+336: Responding "HTTP/1.1 200 Connection Established" to the client
+339: WARNING: Connection closed by the client.
+339: WARNING: Received empty request from the client.
+339: "" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+339: Responding "HTTP/1.1 400 Bad Request" to the client
+340: WARNING: Connection closed by the client.
+340: WARNING: Received empty request from the client.
+340: "" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+340: Responding "HTTP/1.1 400 Bad Request" to the client
+335: Responding "HTTP/1.1 200 Connection Established" to the client
+341: WARNING: Connection closed by the client.
+341: WARNING: Received empty request from the client.
+341: "" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+341: Responding "HTTP/1.1 400 Bad Request" to the client
+334: Responding "HTTP/1.1 200 Connection Established" to the client
+342: "CONNECT connect.facebook.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+342: Responding "HTTP/1.1 200 Connection Established" to the client
+343: "CONNECT j.6sc.co:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+345: "CONNECT stats.g.doubleclick.net:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+344: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+346: "CONNECT px.ads.linkedin.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+343: Responding "HTTP/1.1 200 Connection Established" to the client
+344: Sending the request to the server
+346: Responding "HTTP/1.1 200 Connection Established" to the client
+345: Responding "HTTP/1.1 200 Connection Established" to the client
+347: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+347: Sending the request to the server
+348: "CONNECT c.6sc.co:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+349: "CONNECT ipv6.6sc.co:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:35 2024
+348: Responding "HTTP/1.1 200 Connection Established" to the client
+349: Responding "HTTP/1.1 200 Connection Established" to the client
+350: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:36 2024
+350: Sending the request to the server
+352: "CONNECT epsilon.6sense.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:36 2024
+353: "CONNECT 567-bus-347.mktoresp.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:36 2024
+353: Responding "HTTP/1.1 200 Connection Established" to the client
+352: Responding "HTTP/1.1 200 Connection Established" to the client
+356: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:36 2024
+356: Sending the request to the server
+357: "CONNECT b.6sc.co:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:36 2024
+358: "CONNECT b.6sc.co:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:36 2024
+357: Responding "HTTP/1.1 200 Connection Established" to the client
+358: Responding "HTTP/1.1 200 Connection Established" to the client
+361: "POST http://ocsp.r2m01.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:37 2024
+323: "CONNECT events.ub-analytics.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:37 2024
+323: Responding "HTTP/1.1 200 Connection Established" to the client
+361: Sending the request to the server
+360: "CONNECT b.6sc.co:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:37 2024
+360: Responding "HTTP/1.1 200 Connection Established" to the client
+363: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:38 2024
+363: Responding "HTTP/1.1 200 Connection Established" to the client
+364: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:38 2024
+364: Sending the request to the server
+306: WARNING: Connection closed by the client.
+306: WARNING: Received empty request from the client.
+306: "" from 174.109.104.187 @ Sun Mar  3 04:52:38 2024
+306: Responding "HTTP/1.1 400 Bad Request" to the client
+305: WARNING: Connection closed by the client.
+305: WARNING: Received empty request from the client.
+305: "" from 174.109.104.187 @ Sun Mar  3 04:52:38 2024
+305: Responding "HTTP/1.1 400 Bad Request" to the client
+307: WARNING: Connection closed by the client.
+307: WARNING: Received empty request from the client.
+307: "" from 174.109.104.187 @ Sun Mar  3 04:52:38 2024
+307: Responding "HTTP/1.1 400 Bad Request" to the client
+365: "CONNECT www.facebook.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:39 2024
+355: "CONNECT epsilon.6sense.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:39 2024
+365: Responding "HTTP/1.1 200 Connection Established" to the client
+355: Responding "HTTP/1.1 200 Connection Established" to the client
+366: "POST http://ocsp.r2m01.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:39 2024
+367: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:39 2024
+367: Sending the request to the server
+366: Sending the request to the server
+316: WARNING: Connection closed by the client.
+316: WARNING: Received empty request from the client.
+316: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+316: Responding "HTTP/1.1 400 Bad Request" to the client
+318: WARNING: Connection closed by the client.
+318: WARNING: Received empty request from the client.
+318: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+318: Responding "HTTP/1.1 400 Bad Request" to the client
+313: WARNING: Connection closed by the client.
+313: WARNING: Received empty request from the client.
+313: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+313: Responding "HTTP/1.1 400 Bad Request" to the client
+317: WARNING: Connection closed by the client.
+324: WARNING: Connection closed by the client.
+324: WARNING: Received empty request from the client.
+317: WARNING: Received empty request from the client.
+324: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+317: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+317: Responding "HTTP/1.1 400 Bad Request" to the client
+324: Responding "HTTP/1.1 400 Bad Request" to the client
+319: WARNING: Connection closed by the client.
+319: WARNING: Received empty request from the client.
+319: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+319: Responding "HTTP/1.1 400 Bad Request" to the client
+322: WARNING: Connection closed by the client.
+322: WARNING: Received empty request from the client.
+322: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+322: Responding "HTTP/1.1 400 Bad Request" to the client
+315: WARNING: Connection closed by the client.
+315: WARNING: Received empty request from the client.
+315: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+315: Responding "HTTP/1.1 400 Bad Request" to the client
+321: WARNING: Connection closed by the client.
+321: WARNING: Received empty request from the client.
+321: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+314: WARNING: Connection closed by the client.
+314: WARNING: Received empty request from the client.
+314: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+321: Responding "HTTP/1.1 400 Bad Request" to the client
+314: Responding "HTTP/1.1 400 Bad Request" to the client
+320: WARNING: Connection closed by the client.
+320: WARNING: Received empty request from the client.
+320: "" from 174.109.104.187 @ Sun Mar  3 04:52:40 2024
+320: Responding "HTTP/1.1 400 Bad Request" to the client
+351: WARNING: Connection closed by the client.
+351: WARNING: Received empty request from the client.
+351: "" from 174.109.104.187 @ Sun Mar  3 04:52:41 2024
+351: Responding "HTTP/1.1 400 Bad Request" to the client
+354: WARNING: Connection closed by the client.
+354: WARNING: Received empty request from the client.
+354: "" from 174.109.104.187 @ Sun Mar  3 04:52:41 2024
+354: Responding "HTTP/1.1 400 Bad Request" to the client
+333: WARNING: Connection closed by the client.
+333: WARNING: Received empty request from the client.
+333: "" from 174.109.104.187 @ Sun Mar  3 04:52:41 2024
+333: Responding "HTTP/1.1 400 Bad Request" to the client
+369: "CONNECT js.zi-scripts.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:41 2024
+368: "CONNECT imgsct.cookiebot.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:41 2024
+368: Responding "HTTP/1.1 200 Connection Established" to the client
+369: Responding "HTTP/1.1 200 Connection Established" to the client
+374: "CONNECT ws.zoominfo.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:41 2024
+374: Responding "HTTP/1.1 200 Connection Established" to the client
+377: "CONNECT ws.zoominfo.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:42 2024
+377: Responding "HTTP/1.1 200 Connection Established" to the client
+359: WARNING: Connection closed by the client.
+359: WARNING: Received empty request from the client.
+359: "" from 174.109.104.187 @ Sun Mar  3 04:52:42 2024
+359: Responding "HTTP/1.1 400 Bad Request" to the client
+362: WARNING: Connection closed by the client.
+362: WARNING: Received empty request from the client.
+362: "" from 174.109.104.187 @ Sun Mar  3 04:52:43 2024
+362: Responding "HTTP/1.1 400 Bad Request" to the client
+370: WARNING: Connection closed by the client.
+370: WARNING: Received empty request from the client.
+370: "" from 174.109.104.187 @ Sun Mar  3 04:52:47 2024
+370: Responding "HTTP/1.1 400 Bad Request" to the client
+375: WARNING: Connection closed by the client.
+375: WARNING: Received empty request from the client.
+375: "" from 174.109.104.187 @ Sun Mar  3 04:52:47 2024
+375: Responding "HTTP/1.1 400 Bad Request" to the client
+372: WARNING: Connection closed by the client.
+372: WARNING: Received empty request from the client.
+372: "" from 174.109.104.187 @ Sun Mar  3 04:52:47 2024
+372: Responding "HTTP/1.1 400 Bad Request" to the client
+371: WARNING: Connection closed by the client.
+371: WARNING: Received empty request from the client.
+371: "" from 174.109.104.187 @ Sun Mar  3 04:52:47 2024
+371: Responding "HTTP/1.1 400 Bad Request" to the client
+376: WARNING: Connection closed by the client.
+376: WARNING: Received empty request from the client.
+376: "" from 174.109.104.187 @ Sun Mar  3 04:52:47 2024
+376: Responding "HTTP/1.1 400 Bad Request" to the client
+373: WARNING: Connection closed by the client.
+373: WARNING: Received empty request from the client.
+373: "" from 174.109.104.187 @ Sun Mar  3 04:52:47 2024
+373: Responding "HTTP/1.1 400 Bad Request" to the client
+253: Received the response from the server
+253: Sending the response to the client
+378: "CONNECT developer.mozilla.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:55 2024
+378: Responding "HTTP/1.1 200 Connection Established" to the client
+380: "POST http://ocsp.pki.goog/s/gts1d4/k64M-8XpZlg HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:55 2024
+380: Sending the request to the server
+381: "CONNECT bcd.developer.mozilla.org:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:58 2024
+381: Responding "HTTP/1.1 200 Connection Established" to the client
+383: "POST http://ocsp.pki.goog/s/gts1d4/MOaqTGou-Aw HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:52:58 2024
+383: Sending the request to the server
+379: WARNING: Connection closed by the client.
+379: WARNING: Received empty request from the client.
+379: "" from 174.109.104.187 @ Sun Mar  3 04:53:00 2024
+379: Responding "HTTP/1.1 400 Bad Request" to the client
+382: WARNING: Connection closed by the client.
+382: WARNING: Received empty request from the client.
+382: "" from 174.109.104.187 @ Sun Mar  3 04:53:03 2024
+382: Responding "HTTP/1.1 400 Bad Request" to the client
+384: "CONNECT challenges.cloudflare.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:13 2024
+384: Responding "HTTP/1.1 200 Connection Established" to the client
+255: Received the response from the server
+255: Sending the response to the client
+387: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:17 2024
+387: in cache, valid
+387: Responding the response to the client
+388: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:17 2024
+388: in cache, valid
+388: Responding the response to the client
+389: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:17 2024
+389: in cache, valid
+389: Responding the response to the client
+390: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:17 2024
+390: in cache, but expired at Sun Mar  3 04:53:18 2024
+390: Requesting re-validation "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from the server
+390: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+390: NOTE Cache-Control: max-age=120
+390: cached, expires at Sun Mar  3 04:55:18 2024
+390: Cache updated with the new content from the origin server.
+391: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:18 2024
+391: in cache, valid
+391: Responding the response to the client
+392: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:18 2024
+392: in cache, valid
+392: Responding the response to the client
+393: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:18 2024
+393: in cache, valid
+393: Responding the response to the client
+394: "GET http://run.mocky.io/v3/056e5bc1-b39d-4e28-92db-0e7327784ca4 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:18 2024
+394: in cache, valid
+394: Responding the response to the client
+385: WARNING: Connection closed by the client.
+385: WARNING: Received empty request from the client.
+385: "" from 174.109.104.187 @ Sun Mar  3 04:53:22 2024
+385: Responding "HTTP/1.1 400 Bad Request" to the client
+386: WARNING: Connection closed by the client.
+386: WARNING: Received empty request from the client.
+386: "" from 174.109.104.187 @ Sun Mar  3 04:53:22 2024
+386: Responding "HTTP/1.1 400 Bad Request" to the client
+395: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:24 2024
+395: in cache, but requires re-validation
+395: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+395: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+395: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+395: cached, but requires re-validation
+395: Cache updated with the new content from the origin server.
+396: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:24 2024
+396: in cache, but requires re-validation
+396: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+396: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+396: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+396: cached, but requires re-validation
+396: Cache updated with the new content from the origin server.
+397: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:25 2024
+397: in cache, but requires re-validation
+397: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+397: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+397: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+397: cached, but requires re-validation
+397: Cache updated with the new content from the origin server.
+398: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:25 2024
+398: in cache, but requires re-validation
+398: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+398: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+398: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+398: cached, but requires re-validation
+398: Cache updated with the new content from the origin server.
+399: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:25 2024
+399: in cache, but requires re-validation
+399: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+399: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+399: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+399: cached, but requires re-validation
+399: Cache updated with the new content from the origin server.
+400: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:25 2024
+400: in cache, but requires re-validation
+400: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+400: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+400: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+400: cached, but requires re-validation
+400: Cache updated with the new content from the origin server.
+401: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:26 2024
+401: in cache, but requires re-validation
+401: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+401: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+401: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+401: cached, but requires re-validation
+401: Cache updated with the new content from the origin server.
+402: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:26 2024
+402: in cache, but requires re-validation
+402: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+402: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+402: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+402: cached, but requires re-validation
+402: Cache updated with the new content from the origin server.
+403: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:26 2024
+403: in cache, but requires re-validation
+403: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+403: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+403: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+403: cached, but requires re-validation
+403: Cache updated with the new content from the origin server.
+404: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:27 2024
+404: in cache, but requires re-validation
+404: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+404: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+404: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+404: cached, but requires re-validation
+404: Cache updated with the new content from the origin server.
+405: "CONNECT bs.serving-sys.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:27 2024
+405: Responding "HTTP/1.1 200 Connection Established" to the client
+406: "POST http://ocsp.r2m02.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:28 2024
+406: Sending the request to the server
+407: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:28 2024
+407: in cache, but requires re-validation
+407: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+407: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+407: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+407: cached, but requires re-validation
+407: Cache updated with the new content from the origin server.
+408: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:28 2024
+408: in cache, but requires re-validation
+408: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+408: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+408: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+408: cached, but requires re-validation
+408: Cache updated with the new content from the origin server.
+409: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:28 2024
+409: in cache, but requires re-validation
+409: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+409: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+409: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+409: cached, but requires re-validation
+409: Cache updated with the new content from the origin server.
+410: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:29 2024
+410: in cache, but requires re-validation
+410: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+410: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+410: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+410: cached, but requires re-validation
+410: Cache updated with the new content from the origin server.
+411: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:29 2024
+411: in cache, but requires re-validation
+411: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+411: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+411: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+411: cached, but requires re-validation
+411: Cache updated with the new content from the origin server.
+412: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:29 2024
+412: in cache, but requires re-validation
+412: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+412: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+412: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+412: cached, but requires re-validation
+412: Cache updated with the new content from the origin server.
+413: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:30 2024
+413: in cache, but requires re-validation
+413: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+413: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+413: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+413: cached, but requires re-validation
+413: Cache updated with the new content from the origin server.
+414: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:30 2024
+414: in cache, but requires re-validation
+414: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+414: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+414: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+414: cached, but requires re-validation
+414: Cache updated with the new content from the origin server.
+415: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:30 2024
+415: in cache, but requires re-validation
+415: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+415: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+415: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+415: cached, but requires re-validation
+415: Cache updated with the new content from the origin server.
+416: "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:30 2024
+416: in cache, but requires re-validation
+416: Requesting re-validation "GET http://run.mocky.io/v3/748ca5ac-acf4-4d6e-af32-8566d2a8df88 HTTP/1.1" from the server
+416: Received "HTTP/1.1 200 OK" from server run.mocky.io:80
+416: NOTE Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
+416: cached, but requires re-validation
+416: Cache updated with the new content from the origin server.
+417: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:32 2024
+417: not in cache
+417: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+417: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+417: not cacheable because status code is not 200 or 301
+417: Responding "HTTP/1.1 404 Not Found" to client
+418: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:32 2024
+418: not in cache
+418: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+418: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+418: not cacheable because status code is not 200 or 301
+418: Responding "HTTP/1.1 404 Not Found" to client
+419: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:33 2024
+419: not in cache
+419: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+419: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+419: not cacheable because status code is not 200 or 301
+419: Responding "HTTP/1.1 404 Not Found" to client
+420: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:33 2024
+420: not in cache
+420: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+420: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+420: not cacheable because status code is not 200 or 301
+420: Responding "HTTP/1.1 404 Not Found" to client
+421: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:33 2024
+421: not in cache
+421: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+421: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+421: not cacheable because status code is not 200 or 301
+421: Responding "HTTP/1.1 404 Not Found" to client
+422: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:33 2024
+422: not in cache
+422: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+422: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+422: not cacheable because status code is not 200 or 301
+422: Responding "HTTP/1.1 404 Not Found" to client
+423: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:34 2024
+423: not in cache
+423: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+423: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+423: not cacheable because status code is not 200 or 301
+423: Responding "HTTP/1.1 404 Not Found" to client
+424: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:34 2024
+424: not in cache
+424: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+424: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+424: not cacheable because status code is not 200 or 301
+424: Responding "HTTP/1.1 404 Not Found" to client
+425: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:34 2024
+425: not in cache
+425: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+425: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+425: not cacheable because status code is not 200 or 301
+425: Responding "HTTP/1.1 404 Not Found" to client
+426: "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:35 2024
+325: WARNING: Received nothing from the server
+426: not in cache
+426: Requesting "GET http://run.mocky.io/v3/a9d48de5-7eee-4c67-945e-cdbb5d4884bb HTTP/1.1" from server run.mocky.io:80
+426: Received "HTTP/1.1 404 Not Found" from server run.mocky.io:80
+426: not cacheable because status code is not 200 or 301
+426: Responding "HTTP/1.1 404 Not Found" to client
+427: "POST http://ocsp.r2m03.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:35 2024
+427: Sending the request to the server
+347: Received the response from the server
+347: Sending the response to the client
+356: Received the response from the server
+356: Sending the response to the client
+428: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:36 2024
+429: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:36 2024
+428: Sending the request to the server
+429: Sending the request to the server
+361: WARNING: Received nothing from the server
+430: "POST http://ocsp.r2m01.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:37 2024
+430: Sending the request to the server
+366: WARNING: Received nothing from the server
+431: "POST http://ocsp.r2m01.amazontrust.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:39 2024
+431: Sending the request to the server
+432: "CONNECT bat.bing.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:39 2024
+432: Responding "HTTP/1.1 200 Connection Established" to the client
+367: Received the response from the server
+367: Sending the response to the client
+433: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:40 2024
+433: Sending the request to the server
+434: "CONNECT www.zhihu.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:41 2024
+434: Responding "HTTP/1.1 200 Connection Established" to the client
+435: "CONNECT www.zhihu.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:42 2024
+435: Responding "HTTP/1.1 200 Connection Established" to the client
+436: "CONNECT mcs.volceapplog.com:443 HTTP/1.1" from 174.109.104.187 @ Sun Mar  3 04:53:43 2024
+436: Responding "HTTP/1.1 200 Connection Established" to the client
+209: Received the response from the server
+209: Sending the response to the client

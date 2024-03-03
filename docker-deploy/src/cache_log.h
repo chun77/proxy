@@ -11,6 +11,8 @@
 #include <sstream>
 #include <vector>
 #include <fstream>
+#include <string>
+#include <stdexcept>
 
 #ifndef MY_PROXY_CACHE_LOG_H
 #define MY_PROXY_CACHE_LOG_H
@@ -22,9 +24,8 @@ private:
 public:
     //initialize the log file
     Log(){
-//        log_file.open("/var/log/erss/proxy.log");
-
-        log_file.open("proxy.log");
+        log_file.open("/var/log/erss/proxy.log");
+        // log_file.open("proxy.log");
         if (!log_file.is_open()){
             throw std::runtime_error("cannot open log file");
         }

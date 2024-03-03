@@ -27,5 +27,6 @@ add_executable(my_proxy
 target_link_libraries(my_proxy
         ${Boost_LIBRARIES}
         ${OPENSSL_LIBRARIES}
+        pthread
 )
 
